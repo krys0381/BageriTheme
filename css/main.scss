@@ -5,7 +5,11 @@
 
 $primary: #E59D35;
 $primarybackground: #F2F2F0;
+$lightertext: #F2F2F0;
+$darkertext: #343C2C;
 $darkgreen: #343C2C;
+
+$font-family-base: 'Houschka Rounded', sans-serif;
 
 $theme-colors: (
     "primary": $primary
@@ -13,6 +17,8 @@ $theme-colors: (
 
 $custom-colors: (
     "primary-background": $primarybackground,
+    "lighter-text": $lightertext,
+    "darker-text": $darkertext,
     "dark-green": $darkgreen
 );
 
@@ -22,7 +28,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Then add additional custom code here
 
-/* HEADER */
+body {
+    background-color: var(--bs-primary-background);
+}
+
+/****************** HEADER ******************/
 
 .header-row {
     padding: 0!important;
@@ -56,6 +66,132 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
             /* &:hover {
                 background-color: ;
             } */
+        }
+    }
+
+    .header-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+        #primary-menu {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+    
+            li {
+                margin: 0 15px;
+                padding: 0;
+    
+                a {
+                    font-size: 18px/27px;
+                    letter-spacing: 0px;
+                    color: var(--bs-lighter-text);
+                    text-decoration: none;
+    
+                    &:hover {
+                        color: var(--bs-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/****************** MOBILE HEADER ******************/
+
+.mobile-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .hamburger div{
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 5px;
+    }
+
+    h4 {
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin: 15px 0;
+            padding: 0;
+
+            a {
+                width: 100%;
+                height: 100%;
+                letter-spacing: 0px;
+                color: var(--bs-darker-text);
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--bs-primary);
+                }
+            }
+        }
+    }
+
+    .offcanvas-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    }
+}
+
+/****************** HOME - HERO ******************/
+
+.home-hero-component{
+    position: relative;
+    min-height: 750px;
+    background-color: var(--bs-primary-background);
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .home-hero-content-container{
+        z-index: 1;
+        padding-bottom: 50px;
+        width: 100%;
+
+        h1 {
+            font-size: 72px/94px;
+            font-weight: normal normal medium;
+            text-align: left;
+            letter-spacing: 0px;
+            color: var(--bs-lighter-text);
+            width: 50%;
+        }
+    
+        p {
+            font-size: 24px/34px;
+            font-weight: normal normal medium;
+            text-align: left;
+            letter-spacing: 0px;
+            color: var(--bs-lighter-text);
+            width: 50%;
+        }
+    }
+
+    .bg-image-container{
+        width: 100%;
+        position: absolute;
+    
+        img {
+            width: 100%;
+            filter: brightness(60%);
         }
     }
 }

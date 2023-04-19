@@ -140,7 +140,8 @@ add_action( 'widgets_init', 'bageri_widgets_init' );
 function bageri_scripts() {
 	wp_enqueue_style( 'bageri-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'bageri-main', get_template_directory_uri() . '/css/main.css' );
-	wp_enqueue_style( 'bootstrap-icons', get_template_directory_uri() . 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css' );
+	wp_enqueue_style( 'bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css' );
+	wp_enqueue_style( 'main-font', 'https://use.typekit.net/szo0exi.css' );
 
 	wp_style_add_data( 'bageri-style', 'rtl', 'replace' );
 
@@ -180,3 +181,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function bageri_register_menu_locations() {
+    register_nav_menu("mobile-nav-menu-location", "Mobile Navigation Menu Location");
+}
+add_action("after_setup_theme", "bageri_register_menu_locations");
