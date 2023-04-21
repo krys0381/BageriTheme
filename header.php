@@ -31,14 +31,15 @@
                 <div class="desktop-menu-container d-flex justify-content-between">
 
                     <div class="left-menu-container d-flex col-3 align-items-center justify-content-start" >
-                        <div class="logo-container col-8">
+                        <div class="col-2"></div>
+						<div class="logo-container col-10">
                             <div class="image-container d-flex justify-content-start align-items-center">
-                                <!-- the_custom_logo() ?> -->
+                                <?php the_custom_logo(); ?>
                             </div>
                         </div>
                     </div>
 
-                    <div class="middle-menu-container col-5 d-none d-xl-flex align-items-center justify-content-center">
+                    <div class="middle-menu-container col-6 d-none d-xl-flex align-items-center justify-content-center">
 						<div class="header-navigation d-none d-xl-flex g-2">
 							<nav id="site-navigation" class="main-navigation">
 								<?php
@@ -53,23 +54,27 @@
 						</div>
                     </div>
 
-					<div class="right-menu-container col-4 d-flex align-items-center justify-content-end">
+					<div class="right-menu-container col-3 d-flex align-items-center justify-content-end">
+						<div class="col-5"></div>
+						<div class="languages-container col-3 d-none d-xl-flex align-items-center justify-content-center">
+							<div class="dropdown-center">
+								<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  									<img src="<?php echo get_template_directory_uri(); ?>/images/uk.png" alt="">EN
+  								</button>
+  								<ul class="dropdown-menu">
+  								  <li><a class="dropdown-item active" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/uk.png" alt="">EN</a></li>
+  								  <li><a class="dropdown-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/denmark.png" alt="">DK</a></li>
+  								  <li><a class="dropdown-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/germany.png" alt="">DE</a></li>
+  								</ul>
+							</div>
+						</div>
 						<div class="account-container col-2 d-none d-xl-flex align-items-center justify-content-center">
-							<i class="bi bi-person-fill"></i>
+							<a href="#"><i class="bi bi-person-fill"></i></a>
 						</div>
-						<div class="languages-container col-2 d-none d-xl-flex align-items-center justify-content-center">
-							<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-  							  EN
-  							</button>
-  							<ul class="dropdown-menu">
-  							  <li><a class="dropdown-item" href="#">EN</a></li>
-  							  <li><a class="dropdown-item" href="#">DK</a></li>
-  							  <li><a class="dropdown-item" href="#">DE</a></li>
-  							</ul>
+						<div class="cart-container col-2 d-none d-xl-flex align-items-center justify-content-center">
+							<a href="#"><i class="bi bi-basket2-fill"></i></a>
 						</div>
-						<div class="button-container col-8 d-none d-xl-flex align-items-center justify-content-center">
-							<a href="#"><button type="button" class=" btn btn-primary btn-lg col-lg-12 col-sm-12 col-12">RESERVE & COLLECT</button></a>
-						</div>
+						<div class="col-2"></div>
 
 						<div class="mobile-navigation d-flex d-xl-none g-2">
                             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
