@@ -6,10 +6,54 @@
     }
 }
 
+@mixin heading2 {
+    h2 {
+        font-size: 38px;
+        font-weight: bold;
+        letter-spacing: 0px;
+    }
+}
+
+@mixin heading3 {
+    h3 {
+        font-size: 32px;
+        letter-spacing: 0px;
+    }
+}
+
 @mixin paragraph {
     p {
         font-size: 18px;
         text-align: left;
         letter-spacing: 0px;
+    }
+}
+
+@mixin button-primary {
+    .btn-primary{
+        width: 100%;
+        padding: 10px 25px;
+        border-radius: 24px;
+        font-size: 18px;
+        color: var(--bs-lighter-text);
+
+        /* &:hover {
+            background-color: ;
+        } */
+    }
+}
+
+@mixin button-link {
+    .btn-link {
+        text-align: left;
+        font-size: 18px;
+        font-weight: medium;
+        letter-spacing: 0px;
+        color: var(--bs-primary);
+        text-decoration: none;
+
+        .bi-arrow-right {
+            margin-left: 5px;
+        }
     }
 }

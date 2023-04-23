@@ -43,7 +43,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "./mixins";
 @include heading1;
+@include heading2;
+@include heading3;
 @include paragraph;
+@include button-primary;
+@include button-link;
 
 body {
     background-color: var(--bs-primary-background);
@@ -116,7 +120,7 @@ body {
             }
 
             img {
-                width: 40%;
+                width: 35%;
                 margin-right: 7px;
             }
         }
@@ -242,26 +246,8 @@ body {
         }
 
         a {
-            .btn-primary{
-                width: 100%;
-                padding: 10px 25px;
-                border-radius: 24px;
-                font-size: 18px;
-                color: var(--bs-lighter-text);
-    
-                /* &:hover {
-                    background-color: ;
-                } */
-            }
-
             .btn-link {
-                text-align: left;
                 margin-left: 10px;
-                font-size: 18px;
-                font-weight: normal normal medium;
-                letter-spacing: 0px;
-                color: var(--bs-primary);
-                text-decoration: none;
             }
         }
     }
@@ -273,6 +259,157 @@ body {
         img {
             width: 100%;
             filter: brightness(60%);
+        }
+    }
+}
+
+/****************** HOME - GET TO KNOW US ******************/
+/****************** HOME - RESERVE AND COLLECT ******************/
+
+.home-default-container {
+    background-color: var(--bs-primary-background);
+
+    .row{
+        padding: 60px 0;
+          
+        .home-default-image {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .home-default-text-container {
+            width: 50%;
+            
+            h2 {
+                color: var(--bs-darker-text);
+                text-align: left;
+                margin: 0 0 20px 10px;
+                width: 90%;
+            }
+
+            .home-default-text-p{
+                color: var(--bs-darker-text);
+                margin: 0 0 20px 10px!important;
+                width: 85%;
+            }
+        }
+    }
+}
+
+/****************** HOME - SPECIAL OFFER ******************/
+/****************** HOME - CUSTOM CAKES ******************/
+
+.offer-component{
+    position: relative;
+    min-height: 500px;
+
+    .offer-content-container{
+        z-index: 1;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            width: 85%;
+            color: var(--bs-lighter-text);
+        }
+    }
+
+    .bg-image-container{
+        width: 100%;
+        position: absolute;
+        transform-origin: top center;
+        transform: scale(1.0);
+    
+        img {
+            width: 100%;
+            filter: brightness(75%);
+        }
+    }
+}
+
+/****************** HOME - SHOP INTRODUCTION ******************/
+
+.shop-introduction-component{
+    background-color: var(--bs-primary-background);
+
+    .shop-introduction-row {
+        .row{
+            padding-top: 40px;
+        }
+    }
+
+    .shop-introduction-container {
+        width: 50%;
+    
+        .shop-introduction-text-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+    
+            h2 {
+                text-align: center;
+                color: var(--bs-darker-text);
+                margin-bottom: 15px;
+            }
+    
+            p {
+                text-align: center;
+                color: var(--bs-darker-text);
+                margin: 0;
+            }
+        }
+    }
+}
+
+.shop-categories-row {
+    .row{
+        padding: 30px 0;
+    }
+
+    .card-group {
+        .card {
+            background-color: var(--bs-primary-background);
+            border: none;
+            border-radius: 0;
+            width: 95%;
+            box-shadow: 0px 8px 24px #00000026;
+            transition: transform .2s;
+            overflow: hidden;
+    
+            img {
+                border-radius: 0;
+                height: 100%;
+                transition: transform .5s ease;
+            }
+
+            &:hover img {
+                transform: scale(1.25);
+            }
+    
+            .card-img-overlay{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding: 0;
+
+                .title-shadow {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    background: transparent linear-gradient(179deg, #07060600 0%, #3D362D 100%) 0% 0% no-repeat padding-box;
+
+                    .card-title {
+                        color: var(--bs-lighter-text);
+                        margin-bottom: 30px;
+                    }
+                }
+            }
         }
     }
 }
