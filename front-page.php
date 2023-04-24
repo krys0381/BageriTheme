@@ -199,4 +199,98 @@
     </div>
 </div>
 
+<!-- HOME - TESTIMONIALS -->
+
+<div class="testimonials-component container-fluid">
+  
+	<div class="testimonials-row g-0 container">
+		<div class="row d-flex justify-content-between align-items-start">
+			<div class="col-lg-12 col-sm-12 col-12 d-flex flex-column align-items-center">
+				<div class="testimonials-container d-flex flex-column justify-content-between">
+					<div class="testimonials-text-container">
+						<h2>Discover what our happy <br>customers have to say about <br>their experience at our bakery.</h2>
+					</div>
+					<div class="testimonials-text-container d-flex flex-column align-items-center">
+						<p>Our customers love their experience at our bakery! Read some of their glowing testimonials to see why and hear what they say about their sweet experiences with us!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tiles-row g-0 container">
+		<div class="row d-flex justify-content-between align-items-start">
+			<div class="card-group">
+    			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
+
+					<div class="card tile">
+						<div class="card-body">
+							<div class="testimonial-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/quote-left.svg" alt=""></div>
+							<p class="card-text">A small, nice bakery. This is where I get my rolls with my dog every morning, in wind and weather, when the shop is open. The boss and the waiter are always looking forward to my dog, who is faithfully waiting in front of the door.</p>
+							<p class="testimonial-author">Amanda Fuller</p>
+						</div>
+					</div>
+
+    			</div>
+    			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
+
+					<div class="card tile">
+						<div class="card-body">
+							<div class="testimonial-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/quote-left.svg" alt=""></div>
+							<p class="card-text">Large selection of rolls Friendly service We’d love to come back.</p>
+							<p class="testimonial-author">Denise Pierce</p>
+						</div>
+					</div>
+
+    			</div>
+    			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
+
+					<div class="card tile">
+						<div class="card-body">
+							<div class="testimonial-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/quote-left.svg" alt=""></div>
+							<p class="card-text">The city’s absolute best croissants!! We have tested it among the city’s other bakers, and the little baker is the supreme winner.</p>
+							<p class="testimonial-author">Ryan Hill</p>
+						</div>
+					</div>
+
+    			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- HOME - ADDRESS AND CONTACT -->
+
+<div class="address-contact-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
+    <div class="container content-container d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="address-contact-container col-lg-6 col-sm-12 col-12 d-flex flex-column align-items-center justify-content-center">
+				<div class="address-contact-text-container my-4">
+	  	  	  	  	<h4>
+						ADDRESS AND CONTACT DETAILS
+	  	  	  	  	</h4>
+	  	  	  	  	<p class="address-contact-text-p">
+						Strandvejen 423, 6854 Henne, Denmark<br>
+						(+45) 30 74 95 02<br>
+						info@detlillebageri.dk
+					</p>
+	  	  	  	</div>
+				<div class="address-contact-text-container">
+	  	  	  	  	<h4>
+						OPENING HOURS
+	  	  	  	  	</h4>
+	  	  	  	  	<p class="address-contact-text-p">
+						Monday - Sunday<br>
+						7:00 - 16:00
+					</p>
+	  	  	  	</div>            
+			</div>
+
+			<div class="address-contact-container col-lg-6 col-sm-12 col-12 d-flex flex-column align-items-center justify-content-center">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.1623937395943!2d8.178910402086222!3d55.73971957223703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464aef6fd8baa8bb%3A0x5ed0cc4b77244caa!2sDet%20Lille%20Bageri%20Henne%20Strand!5e0!3m2!1sen!2scz!4v1682367876620!5m2!1sen!2scz" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php get_footer();

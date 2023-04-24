@@ -7,6 +7,8 @@
 
 $primary: #E59D35;
 $primarybackground: #F2F2F0;
+$secondarybackground: #D0DE92;
+$tertiarybackground: #717B49;
 $lightertext: #F2F2F0;
 $darkertext: #343C2C;
 $darkgreen: #343C2C;
@@ -30,6 +32,8 @@ $theme-colors: (
 
 $custom-colors: (
     "primary-background": $primarybackground,
+    "secondary-background": $secondarybackground,
+    "tertiary-background": $tertiarybackground,
     "lighter-text": $lightertext,
     "darker-text": $darkertext,
     "dark-green": $darkgreen
@@ -45,6 +49,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @include heading1;
 @include heading2;
 @include heading3;
+@include heading4;
 @include paragraph;
 @include button-primary;
 @include button-link;
@@ -373,7 +378,7 @@ body {
     }
 
     .card-group {
-        .card {
+        .shop-category {
             background-color: var(--bs-primary-background);
             border: none;
             border-radius: 0;
@@ -409,6 +414,121 @@ body {
                         margin-bottom: 30px;
                     }
                 }
+            }
+        }
+    }
+}
+
+/****************** HOME - TESTIMONIALS ******************/
+
+.testimonials-component{
+    background-color: var(--bs-primary-background);
+
+    .testimonials-row {
+        .row{
+            padding-top: 40px;
+        }
+    }
+
+    .testimonials-container {
+        width: 50%;
+    
+        .testimonials-text-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+    
+            h2 {
+                text-align: center;
+                color: var(--bs-darker-text);
+                margin-bottom: 15px;
+            }
+    
+            p {
+                text-align: center;
+                color: var(--bs-darker-text);
+                margin: 0;
+            }
+        }
+    }
+}
+
+.tiles-row {
+    .row{
+        padding: 30px 0;
+    }
+
+    .card-group {
+        .tile {
+            background-color: var(--bs-tertiary-background);
+            border: none;
+            border-radius: 0;
+            width: 95%;
+            box-shadow: 0px 8px 24px #00000026;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .card-body {
+                padding: 30px;
+
+                .testimonial-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    img {
+                        padding: 30px;
+                    }
+                }
+    
+                .card-text {
+                    color: var(--bs-lighter-text);
+                    text-align: center;
+                    height: 162px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                .testimonial-author {
+                    color: var(--bs-darker-text);
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/****************** HOME - ADDRESS AND CONTACT ******************/
+
+.address-contact-component{
+    background-color: var(--bs-dark-green);
+
+    .address-contact-container{
+        background-color: var(--bs-dark-green);
+        
+        .address-contact-text-container {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            h4 {
+                color: var(--bs-secondary-background);
+                text-align: left;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .address-contact-text-p{
+                color: var(--bs-lighter-text);
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
             }
         }
     }
