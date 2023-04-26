@@ -11984,6 +11984,8 @@ p {
 
 body {
   background-color: var(--bs-primary-background);
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /****************** HEADER ******************/
@@ -12154,9 +12156,10 @@ body {
 /****************** HOME - RESERVE AND COLLECT ******************/
 .home-default-container {
   background-color: var(--bs-primary-background);
+  margin: 60px 0;
 }
 .home-default-container .row {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 .home-default-container .row .home-default-image {
   background-size: cover;
@@ -12210,9 +12213,7 @@ body {
 /****************** HOME - SHOP INTRODUCTION ******************/
 .shop-introduction-component {
   background-color: var(--bs-primary-background);
-}
-.shop-introduction-component .shop-introduction-row .row {
-  padding-top: 40px;
+  margin: 60px 0;
 }
 .shop-introduction-component .shop-introduction-container {
   width: 50%;
@@ -12274,9 +12275,7 @@ body {
 /****************** HOME - TESTIMONIALS ******************/
 .testimonials-component {
   background-color: var(--bs-primary-background);
-}
-.testimonials-component .testimonials-row .row {
-  padding-top: 40px;
+  margin: 60px 0;
 }
 .testimonials-component .testimonials-container {
   width: 50%;
@@ -12339,6 +12338,7 @@ body {
 /****************** HOME - ADDRESS AND CONTACT ******************/
 .address-contact-component {
   background-color: var(--bs-dark-green);
+  margin: 60px 0;
 }
 .address-contact-component .address-contact-container {
   background-color: var(--bs-dark-green);
@@ -12361,4 +12361,97 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+
+/****************** HOME - INSTAGRAM FEED ******************/
+.feed-component {
+  background-color: var(--bs-primary-background);
+  margin: 60px 0;
+}
+.feed-component .feed-container {
+  width: 50%;
+}
+.feed-component .feed-container .feed-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.feed-component .feed-container .feed-text-container a {
+  text-decoration: none;
+}
+.feed-component .feed-container .feed-text-container a h3, .feed-component .feed-container .feed-text-container a .h3 {
+  color: var(--bs-primary);
+  font-weight: bold;
+}
+.feed-component .feed-container .feed-text-container p {
+  text-align: center;
+  color: var(--bs-darker-text);
+  margin: 0;
+}
+
+/****************** FOOTER ******************/
+.footer {
+  background-color: var(--bs-secondary-background);
+}
+
+.footer-row {
+  display: flex;
+  background-color: var(--bs-secondary-background);
+  padding: 40px 0 40px 0;
+}
+.footer-row .footer-text-container h4, .footer-row .footer-text-container .h4 {
+  text-align: left;
+  letter-spacing: 0px;
+  color: var(--bs-darker-text);
+}
+.footer-row .footer-text-container p {
+  text-align: left;
+  letter-spacing: 0px;
+  color: var(--bs-darker-text);
+  margin-bottom: 4px;
+}
+.footer-row .menu-footer-navigation-menu-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-row .menu-footer-navigation-menu-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-row .menu-footer-navigation-menu-container ul li {
+  margin: 5px 0;
+  padding: 0;
+}
+.footer-row .menu-footer-navigation-menu-container ul li a {
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: var(--bs-darker-text);
+  text-decoration: none;
+}
+.footer-row .menu-footer-navigation-menu-container ul li a:hover {
+  color: var(--bs-primary);
+}
+.footer-row .some-links {
+  margin: 15px 0;
+}
+.footer-row .some-links .some-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.footer-end-container {
+  background-color: var(--bs-dark-green);
+  padding: 10px 16px !important;
+}
+.footer-end-container .payment-options-container img {
+  margin: 0 10px;
 }

@@ -183,5 +183,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 function bageri_register_menu_locations() {
     register_nav_menu("mobile-nav-menu-location", "Mobile Navigation Menu Location");
+    register_nav_menu("footer-nav-menu-location", "Footer Navigation Menu Location");
 }
 add_action("after_setup_theme", "bageri_register_menu_locations");

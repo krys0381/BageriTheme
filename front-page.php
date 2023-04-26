@@ -227,7 +227,7 @@
 						<div class="card-body">
 							<div class="testimonial-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/quote-left.svg" alt=""></div>
 							<p class="card-text">A small, nice bakery. This is where I get my rolls with my dog every morning, in wind and weather, when the shop is open. The boss and the waiter are always looking forward to my dog, who is faithfully waiting in front of the door.</p>
-							<p class="testimonial-author">Amanda Fuller</p>
+							<p class="testimonial-author" style="color: #F2F2F0">Amanda Fuller</p>
 						</div>
 					</div>
 
@@ -238,7 +238,7 @@
 						<div class="card-body">
 							<div class="testimonial-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/quote-left.svg" alt=""></div>
 							<p class="card-text">Large selection of rolls Friendly service We’d love to come back.</p>
-							<p class="testimonial-author">Denise Pierce</p>
+							<p class="testimonial-author" style="color: #D0DE92">Denise Pierce</p>
 						</div>
 					</div>
 
@@ -293,4 +293,28 @@
     </div>
 </div>
 
+<!-- HOME - INSTAGRAM FEED -->
+
+<div class="feed-component container-fluid">
+	<div class="feed-row g-0 container">
+		<div class="row d-flex justify-content-between align-items-start">
+			<div class="col-lg-12 col-sm-12 col-12 d-flex flex-column align-items-center">
+				<div class="feed-container d-flex flex-column justify-content-between">
+					<div class="feed-text-container">
+						<a href="https://www.instagram.com/detlillebageri/"><h3>@detlillebageri</h3></a>
+					</div>
+					<div class="feed-text-container d-flex flex-column align-items-center">
+						<p>Don’t miss out on our latest offerings and behind-the-scenes glimpses of our bakery. Join us on Instagram for a taste of the goodness that’s in store for you!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<?php if(have_posts()): ?>
+			<?php while(have_posts()): the_post() ?>
+				<?php the_content() ?>
+			<?php endwhile; ?>
+		<?php endif; ?>
+	</div>
+</div>
 <?php get_footer();
