@@ -1,38 +1,46 @@
+<?php get_header();?>
+
+<div class="shop-container container-fluid overflow-hidden">
+	<div class="container">
+	  	<div class="row d-flex justify-content-between">
+	  	  	<div class="shop-sidebar-container d-flex flex-column col-xl-3 col-lg-3 col-sm-12 col-12">
+                <div class="shop-sidebar-content">
+                    <h3>Product Category</h3>
+                    <?php echo do_shortcode( '[product_categories columns=2]' ); ?>
+                </div>
+
+                <div class="shop-sidebar-content">
+                    <h3>Pickup Time Cut-Off</h3>
+                    <p>Orders are accepted until 4:30 PM and will be scheduled for pickup on the next day.</p>
+                </div>
+
+                <div class="shop-sidebar-content">
+                    <h3>Opening Hours</h3>
+                    <p>
+                        Monday - Sunday<br>
+                        7:00 AM - 4:00 PM
+                    </p>
+                </div>
+
+                <div class="shop-sidebar-content">
+                    <h3>Address & Contact Info</h3>
+                    <p>
+                        Strandvejen 423, 6854 Henne, Denmark<br>
+                        (+45) 30 74 95 02<br>
+                        info@detlillebageri.dk<br>
+                    </p>
+                </div>
+	  	  	</div>
+	  	  	<div class="shop-content-container d-flex justify-content-center col-xl-9 col-lg-9 col-sm-12 col-12">
+				<?php if(have_posts()): ?>
+					<?php while(have_posts()): the_post() ?>
+						<?php the_content() ?>
+					<?php endwhile; ?>
+				<?php endif; ?>
+	  	  	</div>
+	  	</div>
+	</div>
+</div>
+
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package bageri
- */
-
-get_header();
-?>
-
-	<main id="primary" class="site-main">
-
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
-
-<?php
-get_sidebar();
 get_footer();

@@ -1,0 +1,75 @@
+/****************** SHOP - HERO ******************/
+
+.shop-hero-component{
+    position: relative;
+    min-height: 400px;
+    background-color: var(--bs-primary-background);
+
+    .shop-hero-content-container{
+        z-index: 1;
+
+        h1 {
+            color: var(--bs-lighter-text);
+            width: 75%;
+        }
+    }
+
+    .bg-image-container{
+        width: 100%;
+        position: absolute;
+    
+        img {
+            width: 100%;
+            filter: brightness(60%);
+        }
+    }
+}
+
+/****************** SHOP ******************/
+
+.shop-container {
+    background-color: var(--bs-primary-background);
+
+    .row{
+        padding: 30px 0;
+
+        .shop-sidebar-container {
+
+            .shop-sidebar-content{
+                width: 100%;
+
+                h3 {
+                    color: var(--bs-darker-text);
+                    font-weight: bold;
+                    text-align: left;
+                }
+                
+                p {
+                    color: var(--bs-darker-text);
+                }
+
+                .btn-primary {
+                    border: 1px solid var(--bs-primary);
+                    background-color: transparent;
+                    color: var(--bs-primary);
+
+                    .bi-download {
+                        margin-right: 10px;
+                    }
+                }
+
+                .woocommerce-loop-category__title{
+                    background-color: var(--bs-dark-green);
+                    border-radius: 25px;
+                    display: flex;
+                    justify-content: center;
+                    color: var(--bs-primary);
+
+                    .count {
+                        display: none;
+                    }
+                }
+            }
+        }
+   }
+}

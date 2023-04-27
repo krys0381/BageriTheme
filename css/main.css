@@ -12455,3 +12455,62 @@ body {
 .footer-end-container .payment-options-container img {
   margin: 0 10px;
 }
+
+/****************** SHOP - HERO ******************/
+.shop-hero-component {
+  position: relative;
+  min-height: 400px;
+  background-color: var(--bs-primary-background);
+}
+.shop-hero-component .shop-hero-content-container {
+  z-index: 1;
+}
+.shop-hero-component .shop-hero-content-container h1, .shop-hero-component .shop-hero-content-container .h1 {
+  color: var(--bs-lighter-text);
+  width: 75%;
+}
+.shop-hero-component .bg-image-container {
+  width: 100%;
+  position: absolute;
+}
+.shop-hero-component .bg-image-container img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+/****************** SHOP ******************/
+.shop-container {
+  background-color: var(--bs-primary-background);
+}
+.shop-container .row {
+  padding: 30px 0;
+}
+.shop-container .row .shop-sidebar-container .shop-sidebar-content {
+  width: 100%;
+}
+.shop-container .row .shop-sidebar-container .shop-sidebar-content h3, .shop-container .row .shop-sidebar-container .shop-sidebar-content .h3 {
+  color: var(--bs-darker-text);
+  font-weight: bold;
+  text-align: left;
+}
+.shop-container .row .shop-sidebar-container .shop-sidebar-content p {
+  color: var(--bs-darker-text);
+}
+.shop-container .row .shop-sidebar-container .shop-sidebar-content .btn-primary {
+  border: 1px solid var(--bs-primary);
+  background-color: transparent;
+  color: var(--bs-primary);
+}
+.shop-container .row .shop-sidebar-container .shop-sidebar-content .btn-primary .bi-download {
+  margin-right: 10px;
+}
+.shop-container .row .shop-sidebar-container .shop-sidebar-content .woocommerce-loop-category__title {
+  background-color: var(--bs-dark-green);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  color: var(--bs-primary);
+}
+.shop-container .row .shop-sidebar-container .shop-sidebar-content .woocommerce-loop-category__title .count {
+  display: none;
+}
