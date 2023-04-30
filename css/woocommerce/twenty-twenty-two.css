@@ -93,11 +93,11 @@
   --wc-red: #a00;
   --wc-orange: #ffba00;
   --wc-blue: #2ea2cc;
-  --wc-primary: #a46497;
+  --wc-primary: #E59D35;
   --wc-primary-text: white;
-  --wc-secondary: #ebe9eb;
-  --wc-secondary-text: #515151;
-  --wc-highlight: #77a464;
+  --wc-secondary: #faf4ec;
+  --wc-secondary-text: #7a603a;
+  --wc-highlight: #35d5e5;
   --wc-highligh-text: white;
   --wc-content-bg: #fff;
   --wc-subtext: #767676;
@@ -193,12 +193,12 @@
 }
 .woocommerce #respond input#submit,
 .woocommerce input.button {
-  background-color: var(--wp--preset--color--foreground, #a46497);
+  background-color: var(--wp--preset--color--foreground, #E59D35);
   color: var(--wp--preset--color--background, white);
 }
 .woocommerce #respond input#submit:hover,
 .woocommerce input.button:hover {
-  background-color: var(--wp--preset--color--foreground, #a46497);
+  background-color: var(--wp--preset--color--foreground, #E59D35);
   color: var(--wp--preset--color--background, white);
 }
 .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce #respond input#submit.disabled:hover, .woocommerce #respond input#submit:disabled:hover, .woocommerce #respond input#submit:disabled[disabled]:hover,
@@ -208,7 +208,7 @@
 .woocommerce input.button.disabled:hover,
 .woocommerce input.button:disabled:hover,
 .woocommerce input.button:disabled[disabled]:hover {
-  background-color: var(--wp--preset--color--foreground, #a46497);
+  background-color: var(--wp--preset--color--foreground, #E59D35);
   color: var(--wp--preset--color--background, white);
 }
 .woocommerce #respond input#submit.alt,
@@ -258,7 +258,7 @@
 }
 .woocommerce button.button,
 .woocommerce a.button {
-  background-color: var(--wp--preset--color--foreground, #a46497);
+  background-color: var(--wp--preset--color--foreground, #E59D35);
   color: var(--wp--preset--color--background, white);
 }
 .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce button.button.disabled:hover, .woocommerce button.button:disabled:hover, .woocommerce button.button:disabled[disabled]:hover,
@@ -268,7 +268,7 @@
 .woocommerce a.button.disabled:hover,
 .woocommerce a.button:disabled:hover,
 .woocommerce a.button:disabled[disabled]:hover {
-  background-color: var(--wp--preset--color--foreground, #a46497);
+  background-color: var(--wp--preset--color--foreground, #E59D35);
   color: var(--wp--preset--color--background, white);
 }
 .woocommerce .woocommerce-result-count {

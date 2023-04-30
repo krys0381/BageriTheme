@@ -68,11 +68,11 @@
   								</ul>
 							</div>
 						</div>
-						<div class="account-container col-2 d-none d-xl-flex align-items-center justify-content-center">
+						<div class="account-icon-container col-2 d-none d-xl-flex align-items-center justify-content-center">
 							<a href="#"><i class="bi bi-person-fill"></i></a>
 						</div>
-						<div class="cart-container col-2 d-none d-xl-flex align-items-center justify-content-center">
-							<a href="#"><i class="bi bi-basket2-fill"></i></a>
+						<div class="cart-icon-container col-2 d-none d-xl-flex align-items-center justify-content-center">
+							<a href="/cart"><i class="bi bi-basket2-fill"></i></a>
 						</div>
 						<div class="col-2"></div>
 

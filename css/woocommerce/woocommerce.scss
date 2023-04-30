@@ -116,6 +116,7 @@ p.demo_store,
 	.quantity .qty {
 		width: 3.631em;
 		text-align: center;
+		height: 38px;
 	}
 
 	/**
@@ -703,7 +704,9 @@ p.demo_store,
 
 	a.added_to_cart {
 		padding-top: 0.5em;
+		margin-left: 10px;
 		display: inline-block;
+		color: #3D362D;
 	}
 
 	/**
@@ -1081,6 +1084,11 @@ p.demo_store,
 	}
 
 	td.product-name {
+
+		a {
+			text-decoration: none;
+			color: #E59D35;
+		}
 
 		dl.variation,
 		.wc-item-meta {
@@ -1816,7 +1824,7 @@ p.demo_store,
 }
 
 .woocommerce-message {
-	border-top-color: #8fae1b;
+	border-top-color: #3D362D;
 
 	&::before {
 		content: "\e015";
@@ -1946,6 +1954,7 @@ p.demo_store,
 			margin-bottom: 1em;
 			font-size: 1.25em;
 			padding: 1em;
+			border-radius: 30px;
 		}
 	}
 

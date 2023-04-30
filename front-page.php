@@ -96,62 +96,74 @@
 			<div class="card-group">
     			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
 
-					<div class="card shop-category">
-  						<img src="<?php echo get_template_directory_uri(); ?>/images/bread.png" class="card-img" alt="">
-  						<div class="card-img-overlay">
-						  	<div class="title-shadow"><h3 class="card-title">Bread</h3></div>
-  						</div>
-					</div>
+					<a href="/product-category/bread/">
+						<div class="card shop-category">
+  							<img src="<?php echo get_template_directory_uri(); ?>/images/bread.png" class="card-img" alt="">
+  							<div class="card-img-overlay">
+							  	<div class="title-shadow"><h3 class="card-title">Bread</h3></div>
+  							</div>
+						</div>
+					</a>
 
     			</div>
     			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
 
-					<div class="card shop-category">
-  						<img src="<?php echo get_template_directory_uri(); ?>/images/pastries.png" class="card-img" alt="">
-  						<div class="card-img-overlay">
-						  	<div class="title-shadow"><h3 class="card-title">Pastries</h3></div>
-  						</div>
-					</div>
+					<a href="/product-category/pastries/">
+						<div class="card shop-category">
+  							<img src="<?php echo get_template_directory_uri(); ?>/images/pastries.png" class="card-img" alt="">
+  							<div class="card-img-overlay">
+							  	<div class="title-shadow"><h3 class="card-title">Pastries</h3></div>
+  							</div>
+						</div>
+					</a>
 
     			</div>
     			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
 
-					<div class="card shop-category">
-  						<img src="<?php echo get_template_directory_uri(); ?>/images/cakes.png" class="card-img" alt="">
-  						<div class="card-img-overlay">
-						  	<div class="title-shadow"><h3 class="card-title">Cakes</h3></div>
-  						</div>
-					</div>
+					<a href="/product-category/cakes/">
+						<div class="card shop-category">
+  							<img src="<?php echo get_template_directory_uri(); ?>/images/cakes.png" class="card-img" alt="">
+  							<div class="card-img-overlay">
+							  	<div class="title-shadow"><h3 class="card-title">Cakes</h3></div>
+  							</div>
+						</div>
+					</a>
 
     			</div>
     			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
 
-					<div class="card shop-category">
-  						<img src="<?php echo get_template_directory_uri(); ?>/images/cookies.png" class="card-img" alt="">
-  						<div class="card-img-overlay">
-						  	<div class="title-shadow"><h3 class="card-title">Cookies</h3></div>
-  						</div>
-					</div>
+					<a href="/product-category/cookies/">
+						<div class="card shop-category">
+  							<img src="<?php echo get_template_directory_uri(); ?>/images/cookies.png" class="card-img" alt="">
+  							<div class="card-img-overlay">
+							  	<div class="title-shadow"><h3 class="card-title">Cookies</h3></div>
+  							</div>
+						</div>
+					</a>
 
     			</div>
     			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
 
-					<div class="card shop-category">
-  						<img src="<?php echo get_template_directory_uri(); ?>/images/specialty-goods.png" class="card-img" alt="">
-  						<div class="card-img-overlay">
-						  	<div class="title-shadow"><h3 class="card-title">Specialty goods</h3></div>
-  						</div>
-					</div>
+					<a href="/product-category/speciality/">
+						<div class="card shop-category">
+  							<img src="<?php echo get_template_directory_uri(); ?>/images/specialty-goods.png" class="card-img" alt="">
+  							<div class="card-img-overlay">
+							  	<div class="title-shadow"><h3 class="card-title">Speciality goods</h3></div>
+  							</div>
+						</div>
+					</a>
 
     			</div>
     			<div class="col-lg-4 col-sm-12 col-12 d-flex justify-content-center my-2">
 
-					<div class="card shop-category">
-  						<img src="<?php echo get_template_directory_uri(); ?>/images/gluten-free-goods.png" class="card-img" alt="">
-  						<div class="card-img-overlay">
-							<div class="title-shadow"><h3 class="card-title">Gluten-free goods</h3></div>
-  						</div>
-					</div>
+					<a href="/product-category/gluten-free/">
+						<div class="card shop-category">
+  							<img src="<?php echo get_template_directory_uri(); ?>/images/gluten-free-goods.png" class="card-img" alt="">
+  							<div class="card-img-overlay">
+								<div class="title-shadow"><h3 class="card-title">Gluten-free goods</h3></div>
+  							</div>
+						</div>
+					</a>
 
     			</div>
 			</div>

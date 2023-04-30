@@ -15,9 +15,9 @@
     </div>
 </div>
 
-<!-- SHOP -->
+<!-- SHOP - CATEGORIES -->
 
-<div class="shop-container container-fluid overflow-hidden">
+<div class="shop-taxonomy-product-cat-container container-fluid overflow-hidden">
 	<div class="container">
 	  	<div class="row d-flex justify-content-between">
 	  	  	<div class="shop-sidebar-container d-flex flex-column col-xl-3 col-lg-3 col-sm-12 col-12">
@@ -28,7 +28,34 @@
                 <?php dynamic_sidebar( 'custom-shop-widget' ); ?>
 	  	  	</div>
 	  	  	<div class="shop-content-container d-flex justify-content-center col-xl-9 col-lg-9 col-sm-12 col-12">
-	  	  	  	<?php echo do_shortcode( '[products columns=3]' ); ?>
+	  	  	  	
+				<?php
+				if ( woocommerce_product_loop() ) {
+
+					woocommerce_product_loop_start();
+
+					if ( wc_get_loop_prop( 'total' ) ) {
+						while ( have_posts() ) {
+							the_post();
+						
+							/**
+							 * Hook: woocommerce_shop_loop.
+							 */
+							do_action( 'woocommerce_shop_loop' );
+						
+							wc_get_template_part( 'content', 'product' );
+						}
+					}
+			
+					woocommerce_product_loop_end();
+				} else {
+					/**
+					 * Hook: woocommerce_no_products_found.
+					 *
+					 * @hooked wc_no_products_found - 10
+					 */
+					do_action( 'woocommerce_no_products_found' );
+				}?>
 	  	  	</div>
 	  	</div>
 	</div>

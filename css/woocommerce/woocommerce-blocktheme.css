@@ -29,11 +29,11 @@
   --wc-red: #a00;
   --wc-orange: #ffba00;
   --wc-blue: #2ea2cc;
-  --wc-primary: #a46497;
+  --wc-primary: #E59D35;
   --wc-primary-text: white;
-  --wc-secondary: #ebe9eb;
-  --wc-secondary-text: #515151;
-  --wc-highlight: #77a464;
+  --wc-secondary: #faf4ec;
+  --wc-secondary-text: #7a603a;
+  --wc-highlight: #35d5e5;
   --wc-highligh-text: white;
   --wc-content-bg: #fff;
   --wc-subtext: #767676;
@@ -157,7 +157,7 @@
   margin-top: 1rem;
 }
 .woocommerce span.onsale {
-  background-color: var(--wp--preset--color--foreground, #77a464);
+  background-color: var(--wp--preset--color--foreground, #35d5e5);
   color: var(--wp--preset--color--background, white);
 }
 .woocommerce table.variations tr {
@@ -382,7 +382,7 @@
 */
 p.demo_store,
 .woocommerce-store-notice {
-  background: var(--wp--preset--color--foreground, #a46497);
+  background: var(--wp--preset--color--foreground, #E59D35);
   bottom: 0;
   color: var(--wp--preset--color--background, white);
   position: fixed;
