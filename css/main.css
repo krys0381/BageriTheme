@@ -12300,7 +12300,7 @@ body {
 }
 .offer-component .bg-image-container img {
   width: 100%;
-  filter: brightness(75%);
+  filter: brightness(60%);
 }
 
 /****************** HOME - SHOP INTRODUCTION ******************/
@@ -12396,6 +12396,9 @@ body {
 .testimonials-component .tiles-row .row {
   padding: 30px 0;
 }
+.testimonials-component .tiles-row .card-group {
+  padding: 0;
+}
 .testimonials-component .tiles-row .card-group .tile {
   background-color: var(--bs-tertiary-background);
   border: none;
@@ -12426,18 +12429,22 @@ body {
   justify-content: center;
 }
 .testimonials-component .tiles-row .card-group .tile .card-body .testimonial-author {
-  color: var(--bs-darker-text);
+  color: var(--bs-secondary-background);
   text-align: center;
   font-weight: bold;
 }
 
 /****************** HOME - ADDRESS AND CONTACT ******************/
 .address-contact-component {
-  background-color: var(--bs-dark-green);
+  background-color: var(--bs-primary-background);
   margin: 60px 0;
+}
+.address-contact-component .row {
+  background-color: var(--bs-dark-green);
 }
 .address-contact-component .address-contact-container {
   background-color: var(--bs-dark-green);
+  padding: 0;
 }
 .address-contact-component .address-contact-container .address-contact-text-container {
   width: 65%;
@@ -12457,6 +12464,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+.address-contact-component .address-contact-container iframe {
+  filter: brightness(90%);
 }
 
 /****************** HOME - INSTAGRAM FEED ******************/
@@ -12484,6 +12494,9 @@ body {
   text-align: center;
   color: var(--bs-darker-text);
   margin: 0;
+}
+.feed-component #sbi_images {
+  padding: 0;
 }
 
 /****************** FOOTER ******************/
@@ -12633,8 +12646,8 @@ body {
   color: var(--bs-darker-text);
   margin-bottom: 15px;
 }
-.about-philosophy-component .tiles-row .row {
-  padding: 30px 0;
+.about-philosophy-component .tiles-row .card-group {
+  padding: 0;
 }
 .about-philosophy-component .tiles-row .card-group .tile-dark {
   background-color: var(--bs-tertiary-background);
@@ -12652,6 +12665,7 @@ body {
 .about-philosophy-component .tiles-row .card-group .tile-dark .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-dark .card-body .h3 {
   color: var(--bs-lighter-text);
   font-weight: bold;
+  margin-bottom: 25px;
 }
 .about-philosophy-component .tiles-row .card-group .tile-dark .card-body .card-text {
   color: var(--bs-lighter-text);
@@ -12675,12 +12689,67 @@ body {
 .about-philosophy-component .tiles-row .card-group .tile-light .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-light .card-body .h3 {
   color: var(--bs-darker-text);
   font-weight: bold;
+  margin-bottom: 25px;
 }
 .about-philosophy-component .tiles-row .card-group .tile-light .card-body .card-text {
   color: var(--bs-darker-text);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/****************** ABOUT US - HENNE STRAND ******************/
+.about-henne-strand-component {
+  background-color: var(--bs-primary-background);
+  margin: 60px 0;
+}
+.about-henne-strand-component .about-henne-strand-container {
+  width: 50%;
+}
+.about-henne-strand-component .about-henne-strand-container .about-henne-strand-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-henne-strand-component .about-henne-strand-container .about-henne-strand-text-container h2, .about-henne-strand-component .about-henne-strand-container .about-henne-strand-text-container .h2 {
+  text-align: center;
+  color: var(--bs-darker-text);
+  margin-bottom: 15px;
+}
+.about-henne-strand-component .about-henne-strand-container .about-henne-strand-text-container p {
+  text-align: center;
+  color: var(--bs-darker-text);
+  margin: 0;
+}
+.about-henne-strand-component .about-henne-strand-gallery-container {
+  padding-top: 30px;
+}
+
+/****************** ABOUT US - CONTACT ******************/
+.about-contact-component {
+  position: relative;
+  min-height: 500px;
+  margin: 60px 0;
+}
+.about-contact-component .about-contact-content-container {
+  z-index: 1;
+}
+.about-contact-component .about-contact-content-container h2, .about-contact-component .about-contact-content-container .h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  width: 85%;
+  color: var(--bs-lighter-text);
+}
+.about-contact-component .bg-image-container {
+  width: 100%;
+  position: absolute;
+  transform-origin: top center;
+  transform: scale(1);
+}
+.about-contact-component .bg-image-container img {
+  width: 100%;
+  filter: brightness(60%);
 }
 
 /****************** SHOP - HERO ******************/
@@ -12852,4 +12921,212 @@ body {
   font-weight: normal !important;
   color: var(--bs-lighter-text) !important;
   background-color: var(--bs-primary) !important;
+}
+
+/****************** CUSTOM CAKE - HERO ******************/
+.custom-cake-hero-component {
+  position: relative;
+  min-height: 400px;
+  background-color: var(--bs-primary-background);
+}
+.custom-cake-hero-component .custom-cake-hero-content-container {
+  z-index: 1;
+  width: 100%;
+}
+.custom-cake-hero-component .custom-cake-hero-content-container h1, .custom-cake-hero-component .custom-cake-hero-content-container .h1 {
+  color: var(--bs-lighter-text);
+  width: 100%;
+  text-align: center;
+}
+.custom-cake-hero-component .bg-image-container {
+  width: 100%;
+  position: absolute;
+}
+.custom-cake-hero-component .bg-image-container img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+/****************** CUSTOM CAKE - FORM HEADER ******************/
+.custom-cake-form-header-component {
+  background-color: var(--bs-primary-background);
+}
+.custom-cake-form-header-component .custom-cake-form-header-text-container {
+  width: 75%;
+}
+.custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text h2, .custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text .h2 {
+  text-align: center;
+  color: var(--bs-darker-text);
+  margin-bottom: 15px;
+}
+
+/****************** CUSTOM CAKE - ORDER FORM ******************/
+.custom-cake-order-form-component {
+  background-color: var(--bs-primary-background);
+}
+.custom-cake-order-form-component .row {
+  padding: 20px 0;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-image img {
+  width: 100%;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container form {
+  width: 100%;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container .form-control {
+  border-radius: 0;
+  height: 40px;
+  background-color: white;
+  border-color: var(--bs-dark-green);
+  letter-spacing: 0px;
+  color: var(--bs-darker-text);
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container #nameInput, .custom-cake-order-form-component .row .custom-cake-order-form-container #emailInput, .custom-cake-order-form-component .row .custom-cake-order-form-container #subjectInput {
+  padding: 6px 12px;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container #messageInput {
+  height: 128px;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container .form-button-container {
+  width: 100%;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container .form-button-container a .btn-primary {
+  width: 100%;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+/****************** CONTACT US - HERO ******************/
+.contact-hero-component {
+  position: relative;
+  min-height: 400px;
+  background-color: var(--bs-primary-background);
+}
+.contact-hero-component .contact-hero-content-container {
+  z-index: 1;
+  width: 100%;
+}
+.contact-hero-component .contact-hero-content-container h1, .contact-hero-component .contact-hero-content-container .h1 {
+  color: var(--bs-lighter-text);
+  width: 100%;
+  text-align: center;
+}
+.contact-hero-component .bg-image-container {
+  width: 100%;
+  position: absolute;
+}
+.contact-hero-component .bg-image-container img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+/****************** CONTACT US - INFO ******************/
+.contact-info-component {
+  background-color: var(--bs-primary-background);
+}
+.contact-info-component .contact-info-text-container {
+  width: 50%;
+}
+.contact-info-component .contact-info-text-container .contact-info-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact-info-component .contact-info-text-container .contact-info-text h2, .contact-info-component .contact-info-text-container .contact-info-text .h2 {
+  text-align: center;
+  color: var(--bs-darker-text);
+  margin-bottom: 15px;
+}
+.contact-info-component .contact-info-text-container .contact-info-text h3, .contact-info-component .contact-info-text-container .contact-info-text .h3 {
+  text-align: center;
+  color: var(--bs-darker-text);
+  font-weight: bold;
+  margin: 50px 0 25px 0;
+}
+.contact-info-component .contact-info-container {
+  border-right: 2px solid var(--bs-tertiary-background);
+}
+.contact-info-component .contact-info-container:last-child {
+  border-right: none;
+}
+.contact-info-component .contact-info-container .contact-info-content .contact-info-icon {
+  margin-bottom: 10px;
+  height: 50px;
+}
+.contact-info-component .contact-info-container .contact-info-content .contact-info-icon img {
+  height: 100%;
+  color: var(--bs-primary);
+}
+.contact-info-component .contact-info-container .contact-info-content h4, .contact-info-component .contact-info-container .contact-info-content .h4 {
+  color: var(--bs-darker-text);
+  margin-bottom: 10px;
+}
+.contact-info-component .contact-info-container .contact-info-content p {
+  color: var(--bs-darker-text);
+  margin-bottom: 10px;
+}
+
+/****************** CONTACT US - MESSAGE FORM ******************/
+.contact-form-component {
+  background-color: var(--bs-primary-background);
+}
+.contact-form-component .row {
+  padding: 20px 0;
+}
+.contact-form-component .row .contact-form-container form {
+  width: 60%;
+}
+.contact-form-component .row .contact-form-container .form-control {
+  border-radius: 0;
+  height: 40px;
+  background-color: white;
+  border-color: var(--bs-dark-green);
+  letter-spacing: 0px;
+  color: var(--bs-darker-text);
+}
+.contact-form-component .row .contact-form-container #nameInput, .contact-form-component .row .contact-form-container #emailInput, .contact-form-component .row .contact-form-container #subjectInput {
+  padding: 6px 12px;
+}
+.contact-form-component .row .contact-form-container #messageInput {
+  height: 128px;
+}
+.contact-form-component .row .contact-form-container .form-button-container {
+  width: 100%;
+}
+.contact-form-component .row .contact-form-container .form-button-container a .btn-primary {
+  width: 100%;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+/****************** CONTACT US - MAP ******************/
+.contact-map-component {
+  margin: 50px 0;
+}
+.contact-map-component .contact-map-text-container {
+  width: 50%;
+}
+.contact-map-component .contact-map-text-container .contact-map-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact-map-component .contact-map-text-container .contact-map-text h3, .contact-map-component .contact-map-text-container .contact-map-text .h3 {
+  text-align: center;
+  color: var(--bs-darker-text);
+  font-weight: bold;
+  margin-bottom: 25px;
 }

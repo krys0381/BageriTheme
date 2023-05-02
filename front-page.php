@@ -239,7 +239,7 @@
 						<div class="card-body">
 							<div class="testimonial-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/quote-left.svg" alt=""></div>
 							<p class="card-text">A small, nice bakery. This is where I get my rolls with my dog every morning, in wind and weather, when the shop is open. The boss and the waiter are always looking forward to my dog, who is faithfully waiting in front of the door.</p>
-							<p class="testimonial-author" style="color: #F2F2F0">Amanda Fuller</p>
+							<p class="testimonial-author">Amanda Fuller</p>
 						</div>
 					</div>
 
@@ -250,7 +250,7 @@
 						<div class="card-body">
 							<div class="testimonial-icon"><img src="<?php echo get_template_directory_uri(); ?>/images/quote-left.svg" alt=""></div>
 							<p class="card-text">Large selection of rolls Friendly service We’d love to come back.</p>
-							<p class="testimonial-author" style="color: #D0DE92">Denise Pierce</p>
+							<p class="testimonial-author">Denise Pierce</p>
 						</div>
 					</div>
 
