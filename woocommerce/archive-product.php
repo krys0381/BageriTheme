@@ -27,7 +27,13 @@
                 </div>
                 <?php dynamic_sidebar( 'custom-shop-widget' ); ?>
 	  	  	</div>
-	  	  	<div class="shop-content-container d-flex justify-content-center col-xl-9 col-lg-9 col-sm-12 col-12">
+	  	  	<div class="shop-content-container d-flex flex-column align-items-center col-xl-9 col-lg-9 col-sm-12 col-12">
+                <div class="shop-filter-search-container d-flex">
+                    <div class="shop-filter col-6"></div>
+                    <div class="shop-search col-6 d-flex justify-content-end">
+                        <?php aws_get_search_form( true ); ?>
+                    </div>
+                </div>
 	  	  	  	<?php echo do_shortcode( '[products columns=3]' ); ?>
 	  	  	</div>
 	  	</div>

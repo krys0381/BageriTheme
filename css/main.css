@@ -12777,7 +12777,6 @@ body {
 /****************** SHOP ******************/
 .shop-container {
   background-color: var(--bs-primary-background);
-  padding-top: 100px;
   /****************** SHOP - CHECKOUT ******************/
 }
 .shop-container .row {
@@ -12822,6 +12821,13 @@ body {
 }
 .shop-container .row .shop-sidebar-container .shop-sidebar-content .woocommerce-loop-category__title .count {
   display: none;
+}
+.shop-container .row .shop-filter-search-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.shop-container .row .shop-filter-search-container .shop-search .aws-container {
+  width: 60%;
 }
 .shop-container .checkout {
   color: var(--bs-darker-text);
@@ -12880,6 +12886,13 @@ body {
 }
 .shop-taxonomy-product-cat-container .row .shop-sidebar-container .shop-sidebar-content .woocommerce-loop-category__title .count {
   display: none;
+}
+.shop-taxonomy-product-cat-container .shop-filter-search-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.shop-taxonomy-product-cat-container .shop-filter-search-container .shop-search .aws-container {
+  width: 60%;
 }
 
 /****************** SHOP - SINGLE PRODUCT ******************/
@@ -12980,9 +12993,16 @@ body {
 }
 .custom-cake-order-form-component .row .custom-cake-order-form-image img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .custom-cake-order-form-component .row .custom-cake-order-form-container form {
-  width: 100%;
+  width: 95%;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container form h3, .custom-cake-order-form-component .row .custom-cake-order-form-container form .h3 {
+  color: var(--bs-darker-text);
+  font-weight: bold;
 }
 .custom-cake-order-form-component .row .custom-cake-order-form-container .form-control {
   border-radius: 0;
@@ -12991,11 +13011,17 @@ body {
   border-color: var(--bs-dark-green);
   letter-spacing: 0px;
   color: var(--bs-darker-text);
-}
-.custom-cake-order-form-component .row .custom-cake-order-form-container #nameInput, .custom-cake-order-form-component .row .custom-cake-order-form-container #emailInput, .custom-cake-order-form-component .row .custom-cake-order-form-container #subjectInput {
   padding: 6px 12px;
 }
-.custom-cake-order-form-component .row .custom-cake-order-form-container #messageInput {
+.custom-cake-order-form-component .row .custom-cake-order-form-container .form-select {
+  border-radius: 0;
+  height: 40px;
+  background-color: white;
+  border-color: var(--bs-dark-green);
+  letter-spacing: 0px;
+  color: var(--bs-darker-text);
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container #infoInput {
   height: 128px;
 }
 .custom-cake-order-form-component .row .custom-cake-order-form-container .form-button-container {
@@ -13095,8 +13121,6 @@ body {
   border-color: var(--bs-dark-green);
   letter-spacing: 0px;
   color: var(--bs-darker-text);
-}
-.contact-form-component .row .contact-form-container #nameInput, .contact-form-component .row .contact-form-container #emailInput, .contact-form-component .row .contact-form-container #subjectInput {
   padding: 6px 12px;
 }
 .contact-form-component .row .contact-form-container #messageInput {

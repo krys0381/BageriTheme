@@ -924,7 +924,7 @@ body {
 
 .shop-container {
     background-color: var(--bs-primary-background);
-    padding-top: 100px;
+    // padding-top: 100px;
 
     .row{
         padding: 30px 0;
@@ -977,6 +977,17 @@ body {
                     .count {
                         display: none;
                     }
+                }
+            }
+        }
+
+        .shop-filter-search-container {
+            width: 100%;
+            margin-bottom: 30px;
+
+            .shop-search {
+                .aws-container {
+                    width: 60%;
                 }
             }
         }
@@ -1055,6 +1066,17 @@ body {
                         display: none;
                     }
                 }
+            }
+        }
+    }
+
+    .shop-filter-search-container {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .shop-search {
+            .aws-container {
+                width: 60%;
             }
         }
     }
@@ -1182,13 +1204,20 @@ body {
 
             img {
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
         .custom-cake-order-form-container {
 
             form {
-                width: 100%;
+                width: 95%;
+
+                h3 {
+                    color: var(--bs-darker-text);
+                    font-weight: bold;
+                }
             }
             
             .form-control{
@@ -1198,13 +1227,19 @@ body {
                 border-color: var(--bs-dark-green);
                 letter-spacing: 0px;
                 color: var(--bs-darker-text);
-            }
-
-            #nameInput, #emailInput, #subjectInput {
                 padding: 6px 12px;
             }
+
+            .form-select {
+                border-radius: 0;
+                height: 40px;
+                background-color: white;
+                border-color: var(--bs-dark-green);
+                letter-spacing: 0px;
+                color: var(--bs-darker-text);
+            }
             
-            #messageInput {
+            #infoInput {
                 height: 128px;
             }
 
@@ -1335,9 +1370,6 @@ body {
                 border-color: var(--bs-dark-green);
                 letter-spacing: 0px;
                 color: var(--bs-darker-text);
-            }
-
-            #nameInput, #emailInput, #subjectInput {
                 padding: 6px 12px;
             }
             

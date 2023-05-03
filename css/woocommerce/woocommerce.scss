@@ -62,6 +62,7 @@ p.demo_store,
  * Main WooCommerce styles
  */
 .woocommerce {
+	width: 100%;
 
 	.blockUI.blockOverlay {
 		position: relative;
@@ -552,6 +553,7 @@ p.demo_store,
 		padding: 0;
 		list-style: none outside;
 		clear: both;
+		width: 100%;
 
 		@include clearfix();
 

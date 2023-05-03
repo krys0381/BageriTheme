@@ -162,6 +162,7 @@ p.demo_store a,
  * Main WooCommerce styles
  */
 .woocommerce {
+  width: 100%;
   /**
    * Product Page
    */
@@ -637,6 +638,7 @@ p.demo_store a,
   padding: 0;
   list-style: none outside;
   clear: both;
+  width: 100%;
   *zoom: 1;
 }
 .woocommerce .products ul::before, .woocommerce .products ul::after,
