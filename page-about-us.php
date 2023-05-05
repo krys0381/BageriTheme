@@ -172,10 +172,10 @@
 
 <!-- ABOUT US - CONTACT -->
 
-<div class="about-contact-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
+<div class="promotion-banner-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">
         <div class="row d-flex flex-column align-items-center justify-content-start">
-            <div class="about-contact-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
+            <div class="promotion-banner-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
                 <h2>Let's bake memories together!</h2>
 				<a href="#"><button type="button" class=" btn btn-primary btn-lg col-lg-12 col-sm-12 col-12">CONTACT US</button></a>
             </div>

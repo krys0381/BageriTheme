@@ -29,13 +29,13 @@
 
 </div>
 
-<!-- HOME - GET TO KNOW US -->
+<!-- HOME - GET TO KNOW US
 
 <div class="home-default-container container-fluid overflow-hidden">
 	<div class="container">
 	  	<div class="row d-flex justify-content-between">
 	  	  	<div class="home-default-image col-lg-6 col-sm-12 col-12 d-flex align-items-center">
-	  	  	  	<img src="<?php echo get_template_directory_uri(); ?>/images/get-to-know-us.png" alt="Owners of Det Lille Bageri">
+	  	  	  	<img src="/images/get-to-know-us.png" alt="Owners of Det Lille Bageri">
 	  	  	</div>
 	  	  	<div class="home-default-text-container d-flex justify-content-center flex-column col-lg-5 col-sm-12 col-12">
 	  	  	  	<div class="home-default-text-content-container">
@@ -54,23 +54,29 @@
 	  	  	</div>
 	  	</div>
 	</div>
-</div>
+</div> -->
 
-<!-- HOME - SPECIAL OFFER -->
+<?php if(have_posts()): ?>
+	<?php while(have_posts()): the_post() ?>
+		<?php the_content() ?>
+	<?php endwhile; ?>
+<?php endif; ?>
 
-<div class="offer-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
+<!-- HOME - SPECIAL OFFER
+
+<div class="promotion-banner-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">
         <div class="row d-flex flex-column align-items-center justify-content-start">
-            <div class="offer-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
+            <div class="promotion-banner-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
                 <h2>Hop into Easter with our irresistible Easter cake.</h2>
 				<a href="#"><button type="button" class=" btn btn-primary btn-lg col-lg-12 col-sm-12 col-12">DISCOVER OUR DELIGHTS</button></a>
             </div>
         </div>
     </div>
     <div class="bg-image-container d-none d-xl-flex d-lg-flex d-md-flex align-item-center justify-self-center">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/special-offer.png" alt="Sliced Easter cake">
+      <img src="/images/special-offer.png" alt="Sliced Easter cake">
     </div>
-</div>
+</div> -->
 
 <!-- HOME - SHOP INTRODUCTION -->
 
@@ -197,10 +203,10 @@
 
 <!-- HOME - CUSTOM CAKES -->
 
-<div class="offer-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
+<div class="promotion-banner-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">
         <div class="row d-flex flex-column align-items-center justify-content-start">
-            <div class="offer-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
+            <div class="promotion-banner-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
                 <h2>Make your occasion extra special with our deliciously customized cakes!</h2>
 				<a href="#"><button type="button" class=" btn btn-primary btn-lg col-lg-12 col-sm-12 col-12">ORDER NOW</button></a>
             </div>
@@ -322,11 +328,6 @@
 			</div>
 		</div>
 
-		<?php if(have_posts()): ?>
-			<?php while(have_posts()): the_post() ?>
-				<?php the_content() ?>
-			<?php endwhile; ?>
-		<?php endif; ?>
 	</div>
 </div>
 <?php get_footer();

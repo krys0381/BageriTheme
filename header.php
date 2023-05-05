@@ -85,20 +85,23 @@
                                 </div>
                             </button>
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                                <div class="offcanvas-header" style="background-color: #F4F4F5;">
+                                <div class="offcanvas-header">
                                   <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h4>
                                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
-                                <div class="offcanvas-body" style="background-color: #F2F2F0;">
+                                <div class="offcanvas-body">
 									<?php wp_nav_menu(array("theme_location" => "mobile-nav-menu-location")) ?>
-                                    <a href="#"><button type="button" class=" btn btn-primary btn-lg col-lg-12 col-sm-12 col-12">RESERVE & COLLECT</button></a>
+									<ul>
+										<li><a href=""><i class="bi bi-person-fill"></i>LOGIN</a></li>
+										<li><a href=""><i class="bi bi-basket2-fill"></i>CART</a></li>
+									</ul>
+  									<ul class="languages-mobile-container">
+  									  <li><a class="language active" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/uk.png" alt="">EN</a></li>
+  									  <li><a class="language" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/denmark.png" alt="">DK</a></li>
+  									  <li><a class="language" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/germany.png" alt="">DE</a></li>
+  									</ul>
                                 </div>
-								<div class="offcanvas-footer" style="background-color: #F4F4F5;">
-									<i class="bi bi-person-fill"></i>
-									<a href="#">EN</a>
-									<a href="#">DK</a>
-									<a href="#">DE</a>
-                                </div>
+								<div class="offcanvas-footer">
                             </div>
                         </div>
 					</div>
