@@ -310,7 +310,7 @@ body {
     
         img {
             width: 100%;
-            filter: brightness(60%);
+            filter: brightness(50%);
         }
     }
 }
@@ -341,13 +341,14 @@ body {
             h2 {
                 color: var(--bs-darker-text);
                 text-align: left;
-                width: 90%;
+                margin: 0 0 0 10px;
+                width: 95%;
             }
 
-            .home-default-text-p{
+            p{
                 color: var(--bs-darker-text);
                 margin: 0 0 20px 10px!important;
-                width: 85%;
+                width: 95%;
             }
         }
     }
@@ -575,7 +576,7 @@ body {
                 justify-content: flex-start;
             }
 
-            .address-contact-text-p{
+            p{
                 color: var(--bs-lighter-text);
                 width: 100%;
                 display: flex;
@@ -708,13 +709,16 @@ body {
 }
 
 /****************** ABOUT US - HERO ******************/
+/****************** SHOP - HERO ******************/
+/****************** CUSTOM CAKE - HERO ******************/
+/****************** CONTACT US - HERO ******************/
 
-.about-hero-component{
+.small-hero-component{
     position: relative;
     min-height: 400px;
     background-color: var(--bs-primary-background);
 
-    .about-hero-content-container{
+    .small-hero-content-container{
         z-index: 1;
         width: 100%;
 
@@ -937,33 +941,6 @@ body {
     }
 } */
 
-/****************** SHOP - HERO ******************/
-
-.shop-hero-component{
-    position: relative;
-    min-height: 400px;
-    background-color: var(--bs-primary-background);
-
-    .shop-hero-content-container{
-        z-index: 1;
-
-        h1 {
-            color: var(--bs-lighter-text);
-            width: 75%;
-        }
-    }
-
-    .bg-image-container{
-        width: 100%;
-        position: absolute;
-    
-        img {
-            width: 100%;
-            filter: brightness(60%);
-        }
-    }
-}
-
 /****************** SHOP ******************/
 
 .shop-container {
@@ -1181,35 +1158,6 @@ body {
     }
 }
 
-/****************** CUSTOM CAKE - HERO ******************/
-
-.custom-cake-hero-component{
-    position: relative;
-    min-height: 400px;
-    background-color: var(--bs-primary-background);
-
-    .custom-cake-hero-content-container{
-        z-index: 1;
-        width: 100%;
-
-        h1 {
-            color: var(--bs-lighter-text);
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    .bg-image-container{
-        width: 100%;
-        position: absolute;
-    
-        img {
-            width: 100%;
-            filter: brightness(60%);
-        }
-    }
-}
-
 /****************** CUSTOM CAKE - FORM HEADER ******************/
 
 .custom-cake-form-header-component{
@@ -1299,35 +1247,6 @@ body {
     
                 }
             }
-        }
-    }
-}
-
-/****************** CONTACT US - HERO ******************/
-
-.contact-hero-component{
-    position: relative;
-    min-height: 400px;
-    background-color: var(--bs-primary-background);
-
-    .contact-hero-content-container{
-        z-index: 1;
-        width: 100%;
-
-        h1 {
-            color: var(--bs-lighter-text);
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    .bg-image-container{
-        width: 100%;
-        position: absolute;
-    
-        img {
-            width: 100%;
-            filter: brightness(60%);
         }
     }
 }

@@ -1,6 +1,12 @@
 <?php get_header();?>
 
-<!-- ABOUT US - HERO -->
+<?php if(have_posts()): ?>
+	<?php while(have_posts()): the_post() ?>
+		<?php the_content() ?>
+	<?php endwhile; ?>
+<?php endif; ?>
+
+<!-- ABOUT US - HERO
 
 <div class="about-hero-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">
@@ -11,11 +17,11 @@
         </div>
     </div>
     <div class="bg-image-container d-none d-xl-flex d-lg-flex align-item-center justify-self-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/about-hero.png" alt="">
+        <img src="/images/about-hero.png" alt="">
     </div>
-</div>
+</div> -->
 
-<!-- ABOUT US - DISCOVER OUR STORY -->
+<!-- ABOUT US - DISCOVER OUR STORY
 
 <div class="about-discover-container container-fluid overflow-hidden">
 	<div class="container">
@@ -39,19 +45,13 @@
 	  	  	</div>
 	  	</div>
 	</div>
-</div>
+</div> -->
 
 <!-- ABOUT US - BAKERY GALLERY -->
 
 <div class="about-gallery-container container-fluid overflow-hidden">
 	<div class="container">
 	  	<div class="row d-flex justify-content-between">
-
-            <?php if(have_posts()): ?>
-            	<?php while(have_posts()): the_post() ?>
-            		<?php the_content() ?>
-            	<?php endwhile; ?>
-            <?php endif; ?>
 
         </div>
 	</div>
@@ -159,11 +159,7 @@
 			</div>
 
 			<div class="about-henne-strand-gallery-container">
-				<?php if(have_posts()): ?>
-            		<?php while(have_posts()): the_post() ?>
-            			<?php the_content() ?>
-            		<?php endwhile; ?>
-            	<?php endif; ?>
+
 			</div>
 		</div>
 	</div>

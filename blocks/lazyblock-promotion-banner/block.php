@@ -12,6 +12,6 @@
         </div>
     </div>
     <div class="bg-image-container d-none d-xl-flex d-lg-flex d-md-flex align-item-center justify-self-center">
-      <img src="<?php echo $attributes["background-image-link"]?>" alt="Sliced Easter cake">
+      <img src="<?php echo $attributes["background-image-link"]?>">
     </div>
 </div>

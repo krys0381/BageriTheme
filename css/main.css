@@ -12274,7 +12274,7 @@ body {
 }
 .home-hero-component .bg-image-container img {
   width: 100%;
-  filter: brightness(60%);
+  filter: brightness(50%);
 }
 
 /****************** HOME - GET TO KNOW US ******************/
@@ -12300,12 +12300,13 @@ body {
 .home-default-container .row .home-default-text-container h2, .home-default-container .row .home-default-text-container .h2 {
   color: var(--bs-darker-text);
   text-align: left;
-  width: 90%;
+  margin: 0 0 0 10px;
+  width: 95%;
 }
-.home-default-container .row .home-default-text-container .home-default-text-p {
+.home-default-container .row .home-default-text-container p {
   color: var(--bs-darker-text);
   margin: 0 0 20px 10px !important;
-  width: 85%;
+  width: 95%;
 }
 
 /****************** HOME - SPECIAL OFFER ******************/
@@ -12491,7 +12492,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.address-contact-component .address-contact-container .address-contact-text-container .address-contact-text-p {
+.address-contact-component .address-contact-container .address-contact-text-container p {
   color: var(--bs-lighter-text);
   width: 100%;
   display: flex;
@@ -12598,25 +12599,28 @@ body {
 }
 
 /****************** ABOUT US - HERO ******************/
-.about-hero-component {
+/****************** SHOP - HERO ******************/
+/****************** CUSTOM CAKE - HERO ******************/
+/****************** CONTACT US - HERO ******************/
+.small-hero-component {
   position: relative;
   min-height: 400px;
   background-color: var(--bs-primary-background);
 }
-.about-hero-component .about-hero-content-container {
+.small-hero-component .small-hero-content-container {
   z-index: 1;
   width: 100%;
 }
-.about-hero-component .about-hero-content-container h1, .about-hero-component .about-hero-content-container .h1 {
+.small-hero-component .small-hero-content-container h1, .small-hero-component .small-hero-content-container .h1 {
   color: var(--bs-lighter-text);
   width: 100%;
   text-align: center;
 }
-.about-hero-component .bg-image-container {
+.small-hero-component .bg-image-container {
   width: 100%;
   position: absolute;
 }
-.about-hero-component .bg-image-container img {
+.small-hero-component .bg-image-container img {
   width: 100%;
   filter: brightness(60%);
 }
@@ -12786,28 +12790,6 @@ body {
         }
     }
 } */
-/****************** SHOP - HERO ******************/
-.shop-hero-component {
-  position: relative;
-  min-height: 400px;
-  background-color: var(--bs-primary-background);
-}
-.shop-hero-component .shop-hero-content-container {
-  z-index: 1;
-}
-.shop-hero-component .shop-hero-content-container h1, .shop-hero-component .shop-hero-content-container .h1 {
-  color: var(--bs-lighter-text);
-  width: 75%;
-}
-.shop-hero-component .bg-image-container {
-  width: 100%;
-  position: absolute;
-}
-.shop-hero-component .bg-image-container img {
-  width: 100%;
-  filter: brightness(60%);
-}
-
 /****************** SHOP ******************/
 .shop-container {
   background-color: var(--bs-primary-background);
@@ -12970,30 +12952,6 @@ body {
   background-color: var(--bs-primary) !important;
 }
 
-/****************** CUSTOM CAKE - HERO ******************/
-.custom-cake-hero-component {
-  position: relative;
-  min-height: 400px;
-  background-color: var(--bs-primary-background);
-}
-.custom-cake-hero-component .custom-cake-hero-content-container {
-  z-index: 1;
-  width: 100%;
-}
-.custom-cake-hero-component .custom-cake-hero-content-container h1, .custom-cake-hero-component .custom-cake-hero-content-container .h1 {
-  color: var(--bs-lighter-text);
-  width: 100%;
-  text-align: center;
-}
-.custom-cake-hero-component .bg-image-container {
-  width: 100%;
-  position: absolute;
-}
-.custom-cake-hero-component .bg-image-container img {
-  width: 100%;
-  filter: brightness(60%);
-}
-
 /****************** CUSTOM CAKE - FORM HEADER ******************/
 .custom-cake-form-header-component {
   background-color: var(--bs-primary-background);
@@ -13065,30 +13023,6 @@ body {
   width: 100%;
   padding: 10px 25px;
   border-radius: 25px;
-}
-
-/****************** CONTACT US - HERO ******************/
-.contact-hero-component {
-  position: relative;
-  min-height: 400px;
-  background-color: var(--bs-primary-background);
-}
-.contact-hero-component .contact-hero-content-container {
-  z-index: 1;
-  width: 100%;
-}
-.contact-hero-component .contact-hero-content-container h1, .contact-hero-component .contact-hero-content-container .h1 {
-  color: var(--bs-lighter-text);
-  width: 100%;
-  text-align: center;
-}
-.contact-hero-component .bg-image-container {
-  width: 100%;
-  position: absolute;
-}
-.contact-hero-component .bg-image-container img {
-  width: 100%;
-  filter: brightness(60%);
 }
 
 /****************** CONTACT US - INFO ******************/

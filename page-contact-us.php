@@ -2,10 +2,10 @@
 
 <!-- CONTACT US - HERO -->
 
-<div class="contact-hero-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
+<div class="small-hero-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">
         <div class="row d-flex flex-column align-items-center justify-content-start">
-            <div class="contact-hero-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
+            <div class="small-hero-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
                 <h1>Contact us</h1>
             </div>
         </div>
