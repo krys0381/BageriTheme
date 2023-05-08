@@ -47,7 +47,7 @@
 	</div>
 </div> -->
 
-<!-- ABOUT US - BAKERY GALLERY -->
+<!-- ABOUT US - BAKERY GALLERY
 
 <div class="about-gallery-container container-fluid overflow-hidden">
 	<div class="container">
@@ -55,9 +55,9 @@
 
         </div>
 	</div>
-</div>
+</div> -->
 
-<!-- ABOUT US - BAKING PHILOSOPHY -->
+<!-- ABOUT US - BAKING PHILOSOPHY
 
 <div class="about-philosophy-component container-fluid">
   
@@ -139,9 +139,9 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
-<!-- ABOUT US - HENNE STRAND -->
+<!-- ABOUT US - HENNE STRAND
 
 <div class="about-henne-strand-component container-fluid">
   
@@ -164,9 +164,9 @@
 		</div>
 	</div>
 
-</div>
+</div> -->
 
-<!-- ABOUT US - CONTACT -->
+<!-- ABOUT US - CONTACT
 
 <div class="promotion-banner-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">
@@ -178,8 +178,8 @@
         </div>
     </div>
     <div class="bg-image-container d-none d-xl-flex d-lg-flex d-md-flex align-item-center justify-self-center">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/about-contact.png" alt="Sliced Easter cake">
+      <img src="/images/about-contact.png" alt="Sliced Easter cake">
     </div>
-</div>
+</div> -->
 
 <?php get_footer();

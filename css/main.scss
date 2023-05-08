@@ -315,17 +315,16 @@ body {
     }
 }
 
-/****************** HOME - GET TO KNOW US ******************/
-/****************** HOME - RESERVE AND COLLECT ******************/
+/****************** PRIMARY BLOCK ******************/
 
-.home-default-container {
+.primary-block-container {
     background-color: var(--bs-primary-background);
     margin: 60px 0;
 
     .row{
         padding: 30px 0;
           
-        .home-default-image {
+        .primary-block-image {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -335,7 +334,7 @@ body {
             }
         }
 
-        .home-default-text-container {
+        .primary-block-text-container {
             width: 50%;
             
             h2 {
@@ -354,9 +353,7 @@ body {
     }
 }
 
-/****************** HOME - SPECIAL OFFER ******************/
-/****************** HOME - CUSTOM CAKES ******************/
-/****************** ABOUT US - CONTACT ******************/
+/****************** PROMOTION BANNER ******************/
 
 .promotion-banner-component{
     position: relative;
@@ -742,13 +739,13 @@ body {
 
 /****************** ABOUT US - DISCOVER OUR STORY ******************/
 
-.about-discover-container {
+.secondary-block-container {
     background-color: var(--bs-primary-background);
 
     .row{
         padding: 30px 0;
           
-        .about-discover-image {
+        .secondary-block-image {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -758,7 +755,7 @@ body {
             }
         }
 
-        .about-discover-text-container {
+        .secondary-block-text-container {
             width: 50%;
             
             h2 {
@@ -768,7 +765,7 @@ body {
                 width: 90%;
             }
 
-            .about-discover-text-p{
+            p{
                 color: var(--bs-darker-text);
                 margin: 0 0 20px 10px!important;
                 width: 85%;
@@ -779,11 +776,16 @@ body {
 
 /****************** ABOUT US - GALLERY ******************/
 
-.about-gallery-container {
+.gallery-container {
     background-color: var(--bs-primary-background);
 
     .row{
         padding: 30px 0;
+    }
+
+    .gallery {
+        padding: 7px;
+        margin: 0;
     }
 }
 
@@ -835,7 +837,7 @@ body {
                         // height: 75px;
                     }
         
-                    .card-text {
+                    p {
                         color: var(--bs-lighter-text);
                         display: flex;
                         align-items: center;
@@ -876,16 +878,16 @@ body {
     }
 }
 
-/****************** ABOUT US - HENNE STRAND ******************/
+/****************** TERTIARY BLOCK ******************/
 
-.about-henne-strand-component{
+.tertiary-block-component{
     background-color: var(--bs-primary-background);
-    margin: 60px 0;
+    margin: 0;
 
-    .about-henne-strand-container {
+    .tertiary-block-container {
         width: 50%;
     
-        .about-henne-strand-text-container {
+        .tertiary-block-text-container {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -903,10 +905,6 @@ body {
                 margin: 0;
             }
         }
-    }
-
-    .about-henne-strand-gallery-container {
-        padding-top: 30px;
     }
 }
 

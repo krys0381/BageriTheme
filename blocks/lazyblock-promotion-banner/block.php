@@ -1,6 +1,4 @@
-<!-- HOME - SPECIAL OFFER -->
-<!-- HOME - CUSTOM CAKES -->
-<!-- ABOUT US - CONTACT -->
+<!-- PROMOTION BANNER-->
 
 <div class="promotion-banner-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">

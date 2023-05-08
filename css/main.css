@@ -12277,41 +12277,38 @@ body {
   filter: brightness(50%);
 }
 
-/****************** HOME - GET TO KNOW US ******************/
-/****************** HOME - RESERVE AND COLLECT ******************/
-.home-default-container {
+/****************** PRIMARY BLOCK ******************/
+.primary-block-container {
   background-color: var(--bs-primary-background);
   margin: 60px 0;
 }
-.home-default-container .row {
+.primary-block-container .row {
   padding: 30px 0;
 }
-.home-default-container .row .home-default-image {
+.primary-block-container .row .primary-block-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.home-default-container .row .home-default-image img {
+.primary-block-container .row .primary-block-image img {
   width: 100%;
 }
-.home-default-container .row .home-default-text-container {
+.primary-block-container .row .primary-block-text-container {
   width: 50%;
 }
-.home-default-container .row .home-default-text-container h2, .home-default-container .row .home-default-text-container .h2 {
+.primary-block-container .row .primary-block-text-container h2, .primary-block-container .row .primary-block-text-container .h2 {
   color: var(--bs-darker-text);
   text-align: left;
   margin: 0 0 0 10px;
   width: 95%;
 }
-.home-default-container .row .home-default-text-container p {
+.primary-block-container .row .primary-block-text-container p {
   color: var(--bs-darker-text);
   margin: 0 0 20px 10px !important;
   width: 95%;
 }
 
-/****************** HOME - SPECIAL OFFER ******************/
-/****************** HOME - CUSTOM CAKES ******************/
-/****************** ABOUT US - CONTACT ******************/
+/****************** PROMOTION BANNER ******************/
 .promotion-banner-component {
   position: relative;
   min-height: 500px;
@@ -12626,41 +12623,45 @@ body {
 }
 
 /****************** ABOUT US - DISCOVER OUR STORY ******************/
-.about-discover-container {
+.secondary-block-container {
   background-color: var(--bs-primary-background);
 }
-.about-discover-container .row {
+.secondary-block-container .row {
   padding: 30px 0;
 }
-.about-discover-container .row .about-discover-image {
+.secondary-block-container .row .secondary-block-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.about-discover-container .row .about-discover-image img {
+.secondary-block-container .row .secondary-block-image img {
   width: 100%;
 }
-.about-discover-container .row .about-discover-text-container {
+.secondary-block-container .row .secondary-block-text-container {
   width: 50%;
 }
-.about-discover-container .row .about-discover-text-container h2, .about-discover-container .row .about-discover-text-container .h2 {
+.secondary-block-container .row .secondary-block-text-container h2, .secondary-block-container .row .secondary-block-text-container .h2 {
   color: var(--bs-darker-text);
   text-align: left;
   margin: 0 0 20px 10px;
   width: 90%;
 }
-.about-discover-container .row .about-discover-text-container .about-discover-text-p {
+.secondary-block-container .row .secondary-block-text-container p {
   color: var(--bs-darker-text);
   margin: 0 0 20px 10px !important;
   width: 85%;
 }
 
 /****************** ABOUT US - GALLERY ******************/
-.about-gallery-container {
+.gallery-container {
   background-color: var(--bs-primary-background);
 }
-.about-gallery-container .row {
+.gallery-container .row {
   padding: 30px 0;
+}
+.gallery-container .gallery {
+  padding: 7px;
+  margin: 0;
 }
 
 /****************** ABOUT US - BAKING PHILOSOPHY ******************/
@@ -12703,7 +12704,7 @@ body {
   font-weight: bold;
   margin-bottom: 25px;
 }
-.about-philosophy-component .tiles-row .card-group .tile-dark .card-body .card-text {
+.about-philosophy-component .tiles-row .card-group .tile-dark .card-body p {
   color: var(--bs-lighter-text);
   display: flex;
   align-items: center;
@@ -12734,32 +12735,29 @@ body {
   justify-content: center;
 }
 
-/****************** ABOUT US - HENNE STRAND ******************/
-.about-henne-strand-component {
+/****************** TERTIARY BLOCK ******************/
+.tertiary-block-component {
   background-color: var(--bs-primary-background);
-  margin: 60px 0;
+  margin: 0;
 }
-.about-henne-strand-component .about-henne-strand-container {
+.tertiary-block-component .tertiary-block-container {
   width: 50%;
 }
-.about-henne-strand-component .about-henne-strand-container .about-henne-strand-text-container {
+.tertiary-block-component .tertiary-block-container .tertiary-block-text-container {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.about-henne-strand-component .about-henne-strand-container .about-henne-strand-text-container h2, .about-henne-strand-component .about-henne-strand-container .about-henne-strand-text-container .h2 {
+.tertiary-block-component .tertiary-block-container .tertiary-block-text-container h2, .tertiary-block-component .tertiary-block-container .tertiary-block-text-container .h2 {
   text-align: center;
   color: var(--bs-darker-text);
   margin-bottom: 15px;
 }
-.about-henne-strand-component .about-henne-strand-container .about-henne-strand-text-container p {
+.tertiary-block-component .tertiary-block-container .tertiary-block-text-container p {
   text-align: center;
   color: var(--bs-darker-text);
   margin: 0;
-}
-.about-henne-strand-component .about-henne-strand-gallery-container {
-  padding-top: 30px;
 }
 
 /* .about-contact-component{

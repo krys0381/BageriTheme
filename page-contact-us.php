@@ -1,6 +1,12 @@
 <?php get_header();?>
 
-<!-- CONTACT US - HERO -->
+<?php if(have_posts()): ?>
+	<?php while(have_posts()): the_post() ?>
+		<?php the_content() ?>
+	<?php endwhile; ?>
+<?php endif; ?>
+
+<!-- CONTACT US - HERO
 
 <div class="small-hero-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">
@@ -11,11 +17,11 @@
         </div>
     </div>
     <div class="bg-image-container d-none d-xl-flex d-lg-flex align-item-center justify-self-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/contact-hero.png" alt="">
+        <img src="/images/contact-hero.png" alt="">
     </div>
-</div>
+</div> -->
 
-<!-- CONTACT US - INFO -->
+<!-- CONTACT US - INFO
 
 <div class="contact-info-component container-fluid">
   
@@ -67,9 +73,9 @@
         </div>
 	</div>
 
-</div>
+</div> -->
 
-<!-- CONTACT US - MESSAGE FORM -->
+<!-- CONTACT US - MESSAGE FORM
 
 <div class="contact-info-component container-fluid">
 	<div class="contact-info-row g-0 container">
@@ -113,9 +119,9 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-<!-- CONTACT US - MAP -->
+<!-- CONTACT US - MAP
 
 <div class="contact-map-component container-fluid">
 	<div class="contact-map-row g-0 container">
@@ -134,6 +140,6 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <?php get_footer();
