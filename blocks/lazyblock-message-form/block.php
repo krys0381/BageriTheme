@@ -16,8 +16,11 @@
 
 <div class="contact-form-component container-fluid overflow-hidden">
     <div class="container">
-        <div class="row d-flex justify-content-between">
-            <div class="contact-form-container d-flex justify-content-center flex-column col-lg-12 col-sm-12 col-12">
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <?php echo do_shortcode( $attributes["form-shortcode"] ); ?>
+
+            <!-- <div class="contact-form-container d-flex justify-content-center flex-column col-lg-12 col-sm-12 col-12">
                 <div class="contact-form-content-container d-flex justify-content-center">
                     <form action="" class="form col-lg-6 col-sm-12 col-12" ref="form">
                         <div class="mb-3 d-flex flex-column align-items-start">
@@ -33,13 +36,13 @@
                             <textarea type="text" class="form-control" id="messageInput" placeholder="Message" required></textarea>
                         </div>
                         <div class="form-button-container d-flex justify-content-center">
-                            <a href="<?php echo $attributes["button-link"]?>">
-                                <button type="submit" class="btn btn-primary col-12 col-xl-12 btn-lg mt-3" name="send"><?php echo $attributes["button-text"]?></button>
+                            <a href="">
+                                <button type="submit" class="btn btn-primary col-12 col-xl-12 btn-lg mt-3" name="send"></button>
                             </a>
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
