@@ -25,7 +25,9 @@
 
 				    	<a href="<?php echo $shop_category["category-link"]?>">
 				    		<div class="card shop-category">
-  				    			<img src="<?php echo $shop_category["category-image"]?>" class="card-img">
+								<?php if ( isset( $shop_category['category-image']['url'] ) ) : ?>
+  									<img src="<?php echo esc_url( $shop_category['category-image']['url'] ); ?>" alt="<?php echo esc_attr( $shop_category['category-image']['alt'] ); ?>">
+								<?php endif; ?>
   				    			<div class="card-img-overlay">
 				    			  	<div class="title-shadow"><h3 class="card-title"><?php echo $shop_category["category-name"]?></h3></div>
   				    			</div>

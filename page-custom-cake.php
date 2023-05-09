@@ -1,6 +1,12 @@
 <?php get_header();?>
 
-<!-- CUSTOM CAKE - HERO -->
+<?php if(have_posts()): ?>
+	<?php while(have_posts()): the_post() ?>
+		<?php the_content() ?>
+	<?php endwhile; ?>
+<?php endif; ?>
+
+<!-- CUSTOM CAKE - HERO
 
 <div class="small-hero-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
     <div class="container content-container d-flex align-items-center justify-content-center">
@@ -11,9 +17,9 @@
         </div>
     </div>
     <div class="bg-image-container d-none d-xl-flex d-lg-flex align-item-center justify-self-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/custom-hero.png" alt="">
+        <img src="/images/custom-hero.png" alt="">
     </div>
-</div>
+</div> -->
 
 <!-- CUSTOM CAKE - FORM HEADER -->
 

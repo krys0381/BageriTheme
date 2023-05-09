@@ -12629,13 +12629,12 @@ body {
 .secondary-block-container .row {
   padding: 30px 0;
 }
-.secondary-block-container .row .secondary-block-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.secondary-block-container .row .secondary-block-image img {
-  width: 100%;
+.secondary-block-container .row .secondary-block-title p {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: var(--bs-tertiary-background);
 }
 .secondary-block-container .row .secondary-block-text-container {
   width: 50%;
@@ -12649,7 +12648,7 @@ body {
 .secondary-block-container .row .secondary-block-text-container p {
   color: var(--bs-darker-text);
   margin: 0 0 20px 10px !important;
-  width: 85%;
+  width: 90%;
 }
 
 /****************** ABOUT US - GALLERY ******************/
@@ -12660,6 +12659,9 @@ body {
   padding: 30px 0;
 }
 .gallery-container .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 7px;
   margin: 0;
 }

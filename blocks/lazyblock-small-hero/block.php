@@ -12,6 +12,8 @@
         </div>
     </div>
     <div class="bg-image-container d-none d-xl-flex d-lg-flex align-item-center justify-self-center">
-        <img src="<?php echo $attributes["background-image"]?>" alt="">
+        <?php if ( isset( $attributes['background-image']['url'] ) ) : ?>
+  			<img src="<?php echo esc_url( $attributes['background-image']['url'] ); ?>" alt="<?php echo esc_attr( $attributes['background-image']['alt'] ); ?>">
+		<?php endif; ?>
     </div>
 </div>

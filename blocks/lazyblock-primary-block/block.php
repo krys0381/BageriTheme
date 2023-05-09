@@ -4,7 +4,9 @@
 	<div class="container">
 	  	<div class="row d-flex justify-content-between">
 	  	  	<div class="primary-block-image col-lg-6 col-sm-12 col-12 d-flex align-items-center">
-	  	  	  	<img src="<?php echo $attributes["image-link"]?>">
+				<?php if ( isset( $attributes['image']['url'] ) ) : ?>
+  					<img src="<?php echo esc_url( $attributes['image']['url'] ); ?>" alt="<?php echo esc_attr( $attributes['image']['alt'] ); ?>">
+				<?php endif; ?>
 	  	  	</div>
 	  	  	<div class="primary-block-text-container d-flex justify-content-center flex-column col-lg-5 col-sm-12 col-12">
 	  	  	  	<div class="primary-block-text-content-container">
