@@ -346,7 +346,7 @@ body {
 
             p{
                 color: var(--bs-darker-text);
-                margin: 0 0 20px 10px!important;
+                margin: 20px 0 20px 10px!important;
                 width: 95%;
             }
         }
@@ -365,7 +365,7 @@ body {
         h2 {
             text-align: center;
             margin-bottom: 15px;
-            width: 85%;
+            width: 100%;
             color: var(--bs-lighter-text);
         }
     }
@@ -790,6 +790,10 @@ body {
         align-items: center;
         padding: 7px;
         margin: 0;
+
+        img {
+            height: 100%;
+        }
     }
 }
 
@@ -1257,6 +1261,7 @@ body {
 
 .contact-info-component{
     background-color: var(--bs-primary-background);
+    margin-top: 30px;
 
     .contact-info-text-container {
         width: 50%;
@@ -1277,7 +1282,7 @@ body {
                 text-align: center;
                 color: var(--bs-darker-text);
                 font-weight: bold;
-                margin: 50px 0 25px 0;
+                margin: 50px 0 0 0;
             }
         }
     }
@@ -1316,7 +1321,7 @@ body {
 
 /****************** CONTACT US - MESSAGE FORM ******************/
 
-.contact-form-component {
+.message-form-component {
     background-color: var(--bs-primary-background);
 
     .row{

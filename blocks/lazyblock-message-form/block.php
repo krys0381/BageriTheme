@@ -14,7 +14,7 @@
 	</div>
 </div>
 
-<div class="contact-form-component container-fluid overflow-hidden">
+<div class="message-form-component container-fluid overflow-hidden">
     <div class="container">
         <div class="row d-flex justify-content-center align-items-center">
 
