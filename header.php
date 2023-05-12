@@ -92,8 +92,8 @@
                                 <div class="offcanvas-body">
 									<?php wp_nav_menu(array("theme_location" => "mobile-nav-menu-location")) ?>
 									<ul>
-										<li><a href=""><i class="bi bi-person-fill"></i>LOGIN</a></li>
-										<li><a href=""><i class="bi bi-basket2-fill"></i>CART</a></li>
+										<li><a href="#"><i class="bi bi-person-fill"></i>LOGIN</a></li>
+										<li><a href="/cart"><i class="bi bi-basket2-fill"></i>CART</a></li>
 									</ul>
   									<ul class="languages-mobile-container">
   									  <li><a class="language active" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/uk.png" alt="">EN</a></li>
@@ -101,7 +101,6 @@
   									  <li><a class="language" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/germany.png" alt="">DE</a></li>
   									</ul>
                                 </div>
-								<div class="offcanvas-footer">
                             </div>
                         </div>
 					</div>

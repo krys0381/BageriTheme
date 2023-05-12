@@ -115,26 +115,6 @@ function bageri_content_width() {
 add_action( 'after_setup_theme', 'bageri_content_width', 0 );
 
 /**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function bageri_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'bageri' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'bageri' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
-}
-add_action( 'widgets_init', 'bageri_widgets_init' );
-
-/**
  * Enqueue scripts and styles.
  */
 function bageri_scripts() {
@@ -190,13 +170,13 @@ add_action("after_setup_theme", "bageri_register_menu_locations");
 remove_action( 'woocommerce_before_subcategory_title', 'woocommerce_subcategory_thumbnail', 10 );
 
 /**
- * Footer Widget One
+ * Shop Sidebar Widget
 */
-function custom_shop_widget() {
+function shop_sidebar_widget() {
 	$args = array(
-		'id' 			=> 	'custom-shop-widget',
-		'name' 			=> 	__('Custom Shop Widget', 'text_domain'),
-		'description' 	=> 	__('Shop Widget', 'text_domain'),
+		'id' 			=> 	'shop_sidebar_widget',
+		'name' 			=> 	__('Shop Sidebar Widget', 'text_domain'),
+		'description' 	=> 	__('Custom Widget', 'text_domain'),
 		'before_title' 	=> 	'<h3>',
 		'after_title' 	=> 	'</h3>',
 		'before_widget' => 	'<div id="%1$s" class="widget %2$s">',
@@ -204,7 +184,75 @@ function custom_shop_widget() {
 	);
 	register_sidebar( $args );
 }
-add_action( 'widgets_init', 'custom_shop_widget');
+add_action( 'widgets_init', 'shop_sidebar_widget');
+
+/**
+ * Footer Contact Widget
+*/
+function footer_contact_widget() {
+	$args = array(
+		'id' 			=> 	'footer_contact_widget',
+		'name' 			=> 	__('Footer Contact Widget', 'text_domain'),
+		'description' 	=> 	__('Custom Footer Widget for Address and Contact Details', 'text_domain'),
+		'before_title' 	=> 	'<h4>',
+		'after_title' 	=> 	'</h4>',
+		'before_widget' => 	'<div id="%1$s" class="widget %2$s">',
+		'after_widget' 	=> 	'</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'footer_contact_widget');
+
+/**
+ * Footer Contact Widget
+*/
+function footer_opening_widget() {
+	$args = array(
+		'id' 			=> 	'footer_opening_widget',
+		'name' 			=> 	__('Footer Opening Widget', 'text_domain'),
+		'description' 	=> 	__('Custom Footer Widget for Opening Hours', 'text_domain'),
+		'before_title' 	=> 	'<h4>',
+		'after_title' 	=> 	'</h4>',
+		'before_widget' => 	'<div id="%1$s" class="widget %2$s">',
+		'after_widget' 	=> 	'</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'footer_opening_widget');
+
+/**
+ * Footer Contact Widget
+*/
+function footer_some_widget() {
+	$args = array(
+		'id' 			=> 	'footer_some_widget',
+		'name' 			=> 	__('Footer SoMe Widget', 'text_domain'),
+		'description' 	=> 	__('Custom Footer Widget for Social Media links', 'text_domain'),
+		'before_title' 	=> 	'<h4>',
+		'after_title' 	=> 	'</h4>',
+		'before_widget' => 	'<div id="%1$s" class="widget %2$s">',
+		'after_widget' 	=> 	'</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'footer_some_widget');
+
+/**
+ * Footer Contact Widget
+*/
+function footer_payment_widget() {
+	$args = array(
+		'id' 			=> 	'footer_payment_widget',
+		'name' 			=> 	__('Footer Payment Widget', 'text_domain'),
+		'description' 	=> 	__('Custom Footer Widget for Payment Options', 'text_domain'),
+		'before_title' 	=> 	'<h4>',
+		'after_title' 	=> 	'</h4>',
+		'before_widget' => 	'<div id="%1$s" class="widget %2$s">',
+		'after_widget' 	=> 	'</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'footer_payment_widget');
 
 /**
  * WooCommerce

@@ -25,7 +25,7 @@
                     <h3>Product Category</h3>
                     <?php echo do_shortcode( '[product_categories columns=2]' ); ?>
                 </div>
-                <?php dynamic_sidebar( 'custom-shop-widget' ); ?>
+                <?php dynamic_sidebar( 'shop-sidebar-widget' ); ?>
 	  	  	</div>
 	  	  	<div class="shop-content-container d-flex flex-column align-items-center col-xl-9 col-lg-9 col-sm-12 col-12">
 				<div class="shop-filter-search-container d-flex">
