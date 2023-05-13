@@ -99,6 +99,10 @@ function bageri_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 }
 add_action( 'after_setup_theme', 'bageri_setup' );
 
@@ -204,7 +208,7 @@ function footer_contact_widget() {
 add_action( 'widgets_init', 'footer_contact_widget');
 
 /**
- * Footer Contact Widget
+ * Footer Opening Widget
 */
 function footer_opening_widget() {
 	$args = array(
@@ -221,7 +225,7 @@ function footer_opening_widget() {
 add_action( 'widgets_init', 'footer_opening_widget');
 
 /**
- * Footer Contact Widget
+ * Footer SoMe Widget
 */
 function footer_some_widget() {
 	$args = array(
@@ -238,7 +242,7 @@ function footer_some_widget() {
 add_action( 'widgets_init', 'footer_some_widget');
 
 /**
- * Footer Contact Widget
+ * Footer Payment Widget
 */
 function footer_payment_widget() {
 	$args = array(

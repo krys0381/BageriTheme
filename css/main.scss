@@ -62,6 +62,10 @@ body {
     padding: 0!important;
 }
 
+.pswp__caption {
+    display: none;
+}
+
 /****************** HEADER ******************/
 
 .header-row {
@@ -71,7 +75,7 @@ body {
 .header{
     background-color: var(--bs-dark-green);
     position: fixed;
-    z-index: 3;
+    z-index: 10;
 
     .image-container{
         background-size: contain;
@@ -1109,7 +1113,10 @@ body {
                 }
             }
         }
-    
+
+        .shop-content-container {
+            padding: 0 30px;
+        }
 
         .shop-filter-search-container {
             width: 100%;

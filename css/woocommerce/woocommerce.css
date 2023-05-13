@@ -307,13 +307,14 @@ p.demo_store a,
   display: inline-block;
 }
 .woocommerce div.product p.stock {
-  font-size: 0.92em;
+  font-size: 1.05em;
+  font-weight: bold;
 }
 .woocommerce div.product .stock {
-  color: #35d5e5;
+  color: #7a603a;
 }
 .woocommerce div.product .out-of-stock {
-  color: red;
+  color: #B23A1E;
 }
 .woocommerce div.product .woocommerce-product-rating {
   margin-bottom: 1.618em;
@@ -326,6 +327,7 @@ p.demo_store a,
   width: 100%;
   height: auto;
   box-shadow: none;
+  padding: 4px;
 }
 .woocommerce div.product div.images div.thumbnails {
   padding-top: 1em;
