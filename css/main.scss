@@ -720,7 +720,7 @@ body {
 
 .small-hero-component{
     position: relative;
-    min-height: 400px;
+    min-height: 325px;
     background-color: var(--bs-primary-background);
 
     .small-hero-content-container{
@@ -731,6 +731,7 @@ body {
             color: var(--bs-lighter-text);
             width: 100%;
             text-align: center;
+            margin: 0;
         }
     }
 
@@ -801,6 +802,7 @@ body {
 
         img {
             height: 100%;
+            width: 100%;
         }
     }
 }

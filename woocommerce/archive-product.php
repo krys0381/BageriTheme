@@ -2,18 +2,7 @@
 
 <!-- SHOP - HERO -->
 
-<div class="small-hero-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
-    <div class="container content-container d-flex align-items-center justify-content-center">
-        <div class="row d-flex flex-column align-items-center justify-content-start">
-            <div class="small-hero-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
-                <h1>Shop</h1>
-            </div>
-        </div>
-    </div>
-    <div class="bg-image-container d-none d-xl-flex d-lg-flex align-item-center justify-self-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/shop-hero.png" alt="">
-    </div>
-</div>
+<?php dynamic_sidebar( 'shop_hero_widget' ); ?>
 
 <!-- SHOP -->
 
@@ -34,7 +23,47 @@
                         <?php aws_get_search_form( true ); ?>
                     </div>
                 </div>
-	  	  	  	<?php echo do_shortcode( '[products columns=3]' ); ?>
+                <?php if ( woocommerce_product_loop() ) {
+
+                    woocommerce_product_loop_start();
+
+                    if ( wc_get_loop_prop( 'total' ) ) {
+                        while ( have_posts() ) {
+                            the_post();
+                        
+                            /**
+                             * Hook: woocommerce_shop_loop.
+                             */
+                            do_action( 'woocommerce_shop_loop' );
+                        
+                            wc_get_template_part( 'content', 'product' );
+                        }
+                    }
+
+                    woocommerce_product_loop_end();
+
+                    /**
+                     * Hook: woocommerce_after_shop_loop.
+                     *
+                     * @hooked woocommerce_pagination - 10
+                     */
+                    do_action( 'woocommerce_after_shop_loop' );
+                    } else {
+                    /**
+                     * Hook: woocommerce_no_products_found.
+                     *
+                     * @hooked wc_no_products_found - 10
+                     */
+                    do_action( 'woocommerce_no_products_found' );
+                    }
+
+                    /**
+                    * Hook: woocommerce_after_main_content.
+                    *
+                    * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+                    */
+                    do_action( 'woocommerce_after_main_content' );
+                ?> 
 	  	  	</div>
 	  	</div>
 	</div>

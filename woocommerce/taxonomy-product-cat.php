@@ -2,18 +2,7 @@
 
 <!-- SHOP - HERO -->
 
-<div class="small-hero-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
-    <div class="container content-container d-flex align-items-center justify-content-center">
-        <div class="row d-flex flex-column align-items-center justify-content-start">
-            <div class="small-hero-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
-                <h1>Shop</h1>
-            </div>
-        </div>
-    </div>
-    <div class="bg-image-container d-none d-xl-flex d-lg-flex align-item-center justify-self-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/shop-hero.png" alt="">
-    </div>
-</div>
+<?php dynamic_sidebar( 'shop_hero_widget' ); ?>
 
 <!-- SHOP - CATEGORIES -->
 

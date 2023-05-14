@@ -70,18 +70,6 @@ function bageri_setup() {
 		)
 	);
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support(
-		'custom-background',
-		apply_filters(
-			'bageri_custom_background_args',
-			array(
-				'default-color' => 'ffffff',
-				'default-image' => '',
-			)
-		)
-	);
-
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -126,8 +114,6 @@ function bageri_scripts() {
 	wp_enqueue_style( 'bageri-main', get_template_directory_uri() . '/css/main.css' );
 	wp_enqueue_style( 'bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css' );
 	wp_enqueue_style( 'main-font', 'https://use.typekit.net/szo0exi.css' );
-
-	wp_style_add_data( 'bageri-style', 'rtl', 'replace' );
 
     wp_enqueue_script("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js", array(), true);
 	wp_enqueue_script( 'bageri-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
@@ -174,13 +160,30 @@ add_action("after_setup_theme", "bageri_register_menu_locations");
 remove_action( 'woocommerce_before_subcategory_title', 'woocommerce_subcategory_thumbnail', 10 );
 
 /**
+ * Shop Hero Widget
+*/
+function shop_hero_widget() {
+	$args = array(
+		'id' 			=> 	'shop_hero_widget',
+		'name' 			=> 	__('Shop Hero Widget', 'text_domain'),
+		'description' 	=> 	__('Custom Widget for the Shop Hero', 'text_domain'),
+		'before_title' 	=> 	'<h1>',
+		'after_title' 	=> 	'</h1>',
+		'before_widget' => 	'<div id="%1$s" class="widget %2$s">',
+		'after_widget' 	=> 	'</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'shop_hero_widget');
+
+/**
  * Shop Sidebar Widget
 */
 function shop_sidebar_widget() {
 	$args = array(
 		'id' 			=> 	'shop_sidebar_widget',
 		'name' 			=> 	__('Shop Sidebar Widget', 'text_domain'),
-		'description' 	=> 	__('Custom Widget', 'text_domain'),
+		'description' 	=> 	__('Custom Widget for the Shop Sidebar', 'text_domain'),
 		'before_title' 	=> 	'<h3>',
 		'after_title' 	=> 	'</h3>',
 		'before_widget' => 	'<div id="%1$s" class="widget %2$s">',

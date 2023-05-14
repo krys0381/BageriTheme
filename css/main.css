@@ -12608,7 +12608,7 @@ body {
 /****************** CONTACT US - HERO ******************/
 .small-hero-component {
   position: relative;
-  min-height: 400px;
+  min-height: 325px;
   background-color: var(--bs-primary-background);
 }
 .small-hero-component .small-hero-content-container {
@@ -12619,6 +12619,7 @@ body {
   color: var(--bs-lighter-text);
   width: 100%;
   text-align: center;
+  margin: 0;
 }
 .small-hero-component .bg-image-container {
   width: 100%;
@@ -12674,6 +12675,7 @@ body {
 }
 .gallery-container .gallery img {
   height: 100%;
+  width: 100%;
 }
 
 /****************** ABOUT US - BAKING PHILOSOPHY ******************/
