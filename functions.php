@@ -303,3 +303,11 @@ function checkout_page_padding(){
         echo "<style>.shop-container{padding-top: 100px;}</style>";
     }
 }
+
+/**
+ * Override theme default specification for product # per row
+ */
+function loop_columns() {
+	return 3; // 3 products per row
+}
+add_filter('loop_shop_columns', 'loop_columns', 999);
