@@ -1186,6 +1186,14 @@ body {
         color: var(--bs-lighter-text)!important;
         background-color: var(--bs-primary)!important;
     }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #tab-description {
+        margin-bottom: 4em;
+    }
 }
 
 /****************** CUSTOM CAKE - FORM HEADER ******************/
@@ -1234,7 +1242,56 @@ body {
 
         .custom-cake-order-form-container {
 
-            form {
+            .custom-cake-order-form-content-container {
+                .wpforms-container {
+                    width: 95%;
+                    margin: 0;
+        
+                    .wpforms-field {
+                        padding: 10px 0;
+        
+                        input {
+                            border-radius: 0;
+                            border-color: var(--bs-dark-green);
+                        }
+
+                        select {
+                            border-radius: 0;
+                            border-color: var(--bs-dark-green);
+                        }
+
+                        .choices__inner {
+                            border-radius: 0;
+                            border-color: var(--bs-dark-green);
+                        }
+        
+                        textarea {
+                            border-radius: 0;
+                            border-color: var(--bs-dark-green);
+                        }
+                    }
+        
+                    .wpforms-submit-container {
+                        margin: 0;
+                        display: flex;
+                        justify-content: flex-start;
+        
+                        .wpforms-submit {
+                            background-color: var(--bs-primary);
+                            width: 30%;
+                            border-radius: 25px;
+                        }
+                    }
+        
+                    .wpforms-confirmation-container-full{
+                        background-color: #faf4ec;
+                        color: #7a603a;
+                        border-color: #7a603a;
+                    }
+                }
+            }
+            
+            /* form {
                 width: 95%;
 
                 h3 {
@@ -1277,7 +1334,7 @@ body {
                     }
     
                 }
-            }
+            } */
         }
     }
 }

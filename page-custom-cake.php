@@ -6,22 +6,7 @@
 	<?php endwhile; ?>
 <?php endif; ?>
 
-<!-- CUSTOM CAKE - HERO
-
-<div class="small-hero-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">  
-    <div class="container content-container d-flex align-items-center justify-content-center">
-        <div class="row d-flex flex-column align-items-center justify-content-start">
-            <div class="small-hero-content-container col-lg-10 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
-                <h1>Custom Cake</h1>
-            </div>
-        </div>
-    </div>
-    <div class="bg-image-container d-none d-xl-flex d-lg-flex align-item-center justify-self-center">
-        <img src="/images/custom-hero.png" alt="">
-    </div>
-</div> -->
-
-<!-- CUSTOM CAKE - FORM HEADER -->
+<!-- CUSTOM CAKE - FORM HEADER
 
 <div class="custom-cake-form-header-component container-fluid"> 
 	<div class="custom-cake-form-header-row g-0 container">
@@ -37,7 +22,7 @@
 	</div>
 </div>
 
-<!-- CUSTOM CAKE - ORDER FORM -->
+CUSTOM CAKE - ORDER FORM
 
 <div class="custom-cake-order-form-component container-fluid overflow-hidden">
 	<div class="container">
@@ -119,6 +104,6 @@
             </div>
 	  	</div>
 	</div>
-</div>
+</div> -->
 
 <?php get_footer();

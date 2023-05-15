@@ -12976,6 +12976,12 @@ body {
   color: var(--bs-lighter-text) !important;
   background-color: var(--bs-primary) !important;
 }
+.single-product-container h2, .single-product-container .h2 {
+  font-size: 32px;
+}
+.single-product-container #tab-description {
+  margin-bottom: 4em;
+}
 
 /****************** CUSTOM CAKE - FORM HEADER ******************/
 .custom-cake-form-header-component {
@@ -13015,40 +13021,89 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.custom-cake-order-form-component .row .custom-cake-order-form-container form {
+.custom-cake-order-form-component .row .custom-cake-order-form-container {
+  /* form {
+      width: 95%;
+
+      h3 {
+          color: var(--bs-darker-text);
+          font-weight: bold;
+      }
+  }
+
+  .form-control{
+      border-radius: 0;
+      height: 40px;
+      background-color: white;
+      border-color: var(--bs-dark-green);
+      letter-spacing: 0px;
+      color: var(--bs-darker-text);
+      padding: 6px 12px;
+  }
+
+  .form-select {
+      border-radius: 0;
+      height: 40px;
+      background-color: white;
+      border-color: var(--bs-dark-green);
+      letter-spacing: 0px;
+      color: var(--bs-darker-text);
+  }
+
+  #infoInput {
+      height: 128px;
+  }
+
+  .form-button-container{
+      width: 100%;
+
+      a {
+          .btn-primary{
+              width: 100%;
+              padding: 10px 25px;
+              border-radius: 25px;
+          }
+
+      }
+  } */
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
   width: 95%;
+  margin: 0;
 }
-.custom-cake-order-form-component .row .custom-cake-order-form-container form h3, .custom-cake-order-form-component .row .custom-cake-order-form-container form .h3 {
-  color: var(--bs-darker-text);
-  font-weight: bold;
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-field {
+  padding: 10px 0;
 }
-.custom-cake-order-form-component .row .custom-cake-order-form-container .form-control {
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-field input {
   border-radius: 0;
-  height: 40px;
-  background-color: white;
   border-color: var(--bs-dark-green);
-  letter-spacing: 0px;
-  color: var(--bs-darker-text);
-  padding: 6px 12px;
 }
-.custom-cake-order-form-component .row .custom-cake-order-form-container .form-select {
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-field select {
   border-radius: 0;
-  height: 40px;
-  background-color: white;
   border-color: var(--bs-dark-green);
-  letter-spacing: 0px;
-  color: var(--bs-darker-text);
 }
-.custom-cake-order-form-component .row .custom-cake-order-form-container #infoInput {
-  height: 128px;
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-field .choices__inner {
+  border-radius: 0;
+  border-color: var(--bs-dark-green);
 }
-.custom-cake-order-form-component .row .custom-cake-order-form-container .form-button-container {
-  width: 100%;
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-field textarea {
+  border-radius: 0;
+  border-color: var(--bs-dark-green);
 }
-.custom-cake-order-form-component .row .custom-cake-order-form-container .form-button-container a .btn-primary {
-  width: 100%;
-  padding: 10px 25px;
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-submit-container {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-submit-container .wpforms-submit {
+  background-color: var(--bs-primary);
+  width: 30%;
   border-radius: 25px;
+}
+.custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-confirmation-container-full {
+  background-color: #faf4ec;
+  color: #7a603a;
+  border-color: #7a603a;
 }
 
 /****************** CONTACT US - INFO ******************/
