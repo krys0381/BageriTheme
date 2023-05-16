@@ -959,6 +959,14 @@ body {
 
 /****************** SHOP ******************/
 
+#cart {
+    padding-top: 100px;
+}
+
+#checkout {
+    padding-top: 100px;
+}
+
 .shop-container {
     background-color: var(--bs-primary-background);
 
@@ -1137,6 +1145,10 @@ body {
 
 .single-product-container {
     padding-top: 100px;
+
+    /* span.onsale {
+        display: none;
+    } */
 
     .woocommerce-breadcrumb {
         a {

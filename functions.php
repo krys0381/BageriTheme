@@ -269,15 +269,13 @@ add_theme_support('woocommerce');
 // Remove WooCommerce Styles
 function remove_woocommerce_styles($enqueue_styles) {
 	unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
-	// unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
-	// unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
 	return $enqueue_styles;
 }
 
 add_filter( 'woocommerce_enqueue_styles',  'remove_woocommerce_styles');
 
 /**
- * Enqueue your own stylesheet
+ * Enqueue your own WooCommerce Styles
 */
 function wp_enqueue_woocommerce_style(){
 	wp_register_style( 'mytheme-woocommerce', get_template_directory_uri() . '/css/woocommerce/woocommerce.css' );
@@ -287,25 +285,6 @@ function wp_enqueue_woocommerce_style(){
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wp_enqueue_woocommerce_style' );
-
-/**
- * Fixing padding on Cart and Checkout
-*/
-add_action('wp_head','cart_page_padding');
-function cart_page_padding(){
-    $page_id = get_queried_object_id();
-    if($page_id==7){
-        echo "<style>.shop-container{padding-top: 100px;}</style>";
-    }
-}
-
-add_action('wp_head','checkout_page_padding');
-function checkout_page_padding(){
-    $page_id = get_queried_object_id();
-    if($page_id==8){
-        echo "<style>.shop-container{padding-top: 100px;}</style>";
-    }
-}
 
 /**
  * Override theme default specification for product # per row
