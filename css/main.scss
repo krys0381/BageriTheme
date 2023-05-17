@@ -1045,17 +1045,57 @@ body {
         }
     }
 
-    /****************** SHOP - CHECKOUT ******************/
+    /****************** SHOP - CART ******************/
 
-    .checkout {
-        color: var(--bs-darker-text);
+    .wp-block-woocommerce-cart{
+        width: 100%;
 
-        h3 {
-            font-weight: bold;
+        .wc-block-components-product-name {
+            color: var(--bs-primary);
+            text-decoration: none;
         }
 
-        button {
-            border-radius: 25px!important;
+        ins {
+            background: var(--bs-lighter-text);
+            color: #B23A1E;
+            font-weight: 600;
+        }
+
+        .components-button {
+            width: 100%;
+            padding: 10px 25px;
+            border-radius: 24px;
+            font-size: 18px;
+            color: var(--bs-lighter-text);
+            background-color: var(--bs-primary)!important;
+        }
+    }
+
+    /****************** SHOP - CHECKOUT ******************/
+
+    .wp-block-woocommerce-checkout {
+        .wc-block-components-text-input {
+            input {
+                border-radius: 0;
+            }
+        }
+
+        ins {
+            background: var(--bs-lighter-text);
+            color: #B23A1E;
+            font-weight: 600;
+        }
+        
+        .wc-block-components-checkout-return-to-cart-button {
+            color: var(--bs-primary);
+        }
+        .components-button {
+            width: 50%;
+            padding: 10px 25px;
+            border-radius: 24px;
+            font-size: 18px;
+            color: var(--bs-lighter-text);
+            background-color: var(--bs-primary)!important;
         }
     }
 }
