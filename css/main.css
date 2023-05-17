@@ -12248,6 +12248,60 @@ body {
   padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
 }
 
+/****************** MY ACCOUNT ******************/
+.my-account-container {
+  background-color: var(--bs-primary-background);
+}
+.my-account-container .row {
+  padding: 30px 0;
+}
+.my-account-container .my-account-content-container .woocommerce-MyAccount-navigation ul {
+  list-style: none;
+  padding-left: 0;
+}
+.my-account-container .my-account-content-container .woocommerce-MyAccount-navigation ul li {
+  margin: 15px 0;
+}
+.my-account-container .my-account-content-container .woocommerce-MyAccount-navigation ul li a {
+  color: var(--bs-primary);
+  text-decoration: none;
+  font-size: 20px;
+}
+.my-account-container .my-account-content-container .woocommerce-MyAccount-content a {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+.my-account-container .my-account-content-container .woocommerce-Address-title h3, .my-account-container .my-account-content-container .woocommerce-Address-title .h3 {
+  font-weight: bold !important;
+}
+.my-account-container .my-account-content-container .woocommerce-Address-title a {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+.my-account-container .my-account-content-container form h3, .my-account-container .my-account-content-container form .h3 {
+  font-weight: bold !important;
+}
+.my-account-container .my-account-content-container form .woocommerce-address-fields button {
+  width: 25%;
+  padding: 10px 25px;
+  margin-top: 10px;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--bs-lighter-text);
+  background-color: var(--bs-primary);
+}
+.my-account-container .my-account-content-container .woocommerce-EditAccountForm button {
+  width: 25%;
+  padding: 10px 25px;
+  margin-top: 10px;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--bs-lighter-text);
+  background-color: var(--bs-primary);
+}
+
 /****************** HOME - HERO ******************/
 .home-hero-component {
   position: relative;
@@ -12893,8 +12947,18 @@ body {
   color: var(--bs-lighter-text);
   background-color: var(--bs-primary) !important;
 }
+.shop-container .wp-block-woocommerce-cart .wp-block-woocommerce-empty-cart-block a {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+.shop-container .wp-block-woocommerce-cart .wp-block-woocommerce-empty-cart-block .wc-block-grid {
+  display: none;
+}
 .shop-container .wp-block-woocommerce-checkout .wc-block-components-text-input input {
   border-radius: 0;
+}
+.shop-container .wp-block-woocommerce-checkout .wc-block-components-product-metadata__description {
+  display: none;
 }
 .shop-container .wp-block-woocommerce-checkout ins {
   background: var(--bs-lighter-text);
@@ -12978,9 +13042,13 @@ body {
 /****************** SHOP - SINGLE PRODUCT ******************/
 .single-product-container {
   padding-top: 100px;
-  /* span.onsale {
-      display: none;
-  } */
+}
+.single-product-container .wc-block-components-notice-banner .wc-block-components-notice-banner__content {
+  color: var(--bs-darker-text);
+  font-size: 16px;
+}
+.single-product-container span.onsale {
+  display: none;
 }
 .single-product-container .woocommerce-breadcrumb a {
   color: var(--bs-primary) !important;

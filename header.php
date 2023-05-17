@@ -69,7 +69,7 @@
 							</div>
 						</div>
 						<div class="account-icon-container col-2 d-none d-xl-flex align-items-center justify-content-center">
-							<a href="#"><i class="bi bi-person-fill"></i></a>
+							<a href="/my-account"><i class="bi bi-person-fill"></i></a>
 						</div>
 						<div class="cart-icon-container col-2 d-none d-xl-flex align-items-center justify-content-center">
 							<a href="/cart"><i class="bi bi-basket2-fill"></i></a>
