@@ -30,8 +30,8 @@
             <div class="header-row row d-flex">
                 <div class="desktop-menu-container d-flex justify-content-between">
 
-                    <div class="left-menu-container d-flex col-3 align-items-center justify-content-start" >
-                        <div class="col-2"></div>
+                    <div class="left-menu-container d-flex col-xl-3 col-lg-3 col-6 align-items-center justify-content-start" >
+                        <div class="col-xl-2 col-lg-2 col-1"></div>
 						<div class="logo-container col-10">
                             <div class="image-container d-flex justify-content-start align-items-center">
                                 <?php the_custom_logo(); ?>
@@ -54,7 +54,7 @@
 						</div>
                     </div>
 
-					<div class="right-menu-container col-3 d-flex align-items-center justify-content-end">
+					<div class="right-menu-container col-xl-3 col-lg-3 col-6 d-flex align-items-center justify-content-end">
 						<div class="col-5"></div>
 						<div class="languages-container col-3 d-none d-xl-flex align-items-center justify-content-center">
 							<div class="dropdown-center">
@@ -92,7 +92,7 @@
                                 <div class="offcanvas-body">
 									<?php wp_nav_menu(array("theme_location" => "mobile-nav-menu-location")) ?>
 									<ul>
-										<li><a href="#"><i class="bi bi-person-fill"></i>LOGIN</a></li>
+										<li><a href="/my-account"><i class="bi bi-person-fill"></i>LOGIN</a></li>
 										<li><a href="/cart"><i class="bi bi-basket2-fill"></i>CART</a></li>
 									</ul>
   									<ul class="languages-mobile-container">

@@ -1,9 +1,9 @@
 <!-- PRIMARY BLOCK -->
 
-<div class="primary-block-container container-fluid overflow-hidden">
+<div class="primary-block-component container-fluid overflow-hidden">
 	<div class="container">
 	  	<div class="row d-flex justify-content-between">
-	  	  	<div class="primary-block-image col-lg-6 col-sm-12 col-12 d-flex align-items-center">
+	  	  	<div class="primary-block-image col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12 d-flex align-items-center">
 				<?php if ( isset( $attributes['image']['url'] ) ) : ?>
   					<img src="<?php echo esc_url( $attributes['image']['url'] ); ?>" alt="<?php echo esc_attr( $attributes['image']['alt'] ); ?>">
 				<?php endif; ?>

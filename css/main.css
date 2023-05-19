@@ -12129,6 +12129,12 @@ body {
 .header .header-navigation #primary-menu li a:hover {
   color: var(--bs-primary);
 }
+.header .header-navigation #primary-menu .current-menu-item a {
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: var(--bs-primary);
+  text-decoration: none;
+}
 .header .languages-container .btn {
   color: var(--bs-lighter-text);
   font-size: 18px;
@@ -12303,64 +12309,68 @@ body {
 }
 
 /****************** HOME - HERO ******************/
-.home-hero-component {
+.big-hero-component {
   position: relative;
   min-height: 750px;
   background-color: var(--bs-primary-background);
   padding-top: 100px;
   padding-bottom: 50px;
 }
-.home-hero-component .home-hero-content-container {
+.big-hero-component .big-hero-content-container {
   z-index: 1;
   width: 100%;
 }
-.home-hero-component .home-hero-content-container h1, .home-hero-component .home-hero-content-container .h1 {
+.big-hero-component .big-hero-content-container h1, .big-hero-component .big-hero-content-container .h1 {
   color: var(--bs-lighter-text);
   width: 75%;
 }
-.home-hero-component .home-hero-content-container p {
+.big-hero-component .big-hero-content-container p {
   font-size: 18px;
   color: var(--bs-lighter-text);
   width: 65%;
 }
-.home-hero-component .home-hero-content-container a .btn-link {
+.big-hero-component .big-hero-content-container a .btn-link {
   margin-left: 10px;
 }
-.home-hero-component .bg-image-container {
+.big-hero-component .bg-image-container {
   width: 100%;
+  height: 100%;
   position: absolute;
 }
-.home-hero-component .bg-image-container img {
+.big-hero-component .bg-image-container img {
   width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: brightness(50%);
 }
 
 /****************** PRIMARY BLOCK ******************/
-.primary-block-container {
+.primary-block-component {
   background-color: var(--bs-primary-background);
   margin: 60px 0;
 }
-.primary-block-container .row {
+.primary-block-component .row {
   padding: 30px 0;
 }
-.primary-block-container .row .primary-block-image {
+.primary-block-component .row .primary-block-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.primary-block-container .row .primary-block-image img {
+.primary-block-component .row .primary-block-image img {
   width: 100%;
 }
-.primary-block-container .row .primary-block-text-container {
+.primary-block-component .row .primary-block-text-container {
   width: 50%;
 }
-.primary-block-container .row .primary-block-text-container h2, .primary-block-container .row .primary-block-text-container .h2 {
+.primary-block-component .row .primary-block-text-container h2, .primary-block-component .row .primary-block-text-container .h2 {
   color: var(--bs-darker-text);
   text-align: left;
   margin: 0 0 0 10px;
   width: 95%;
 }
-.primary-block-container .row .primary-block-text-container p {
+.primary-block-component .row .primary-block-text-container p {
   color: var(--bs-darker-text);
   margin: 20px 0 20px 10px !important;
   width: 95%;
@@ -12556,6 +12566,13 @@ body {
 .address-contact-component .address-contact-container iframe {
   filter: brightness(90%);
 }
+.address-contact-component .map-container {
+  background-color: var(--bs-dark-green);
+  padding: 0;
+}
+.address-contact-component .map-container iframe {
+  filter: brightness(90%);
+}
 
 /****************** HOME - INSTAGRAM FEED ******************/
 .feed-component {
@@ -12632,6 +12649,12 @@ body {
 }
 .footer-row .menu-footer-navigation-menu-container ul li a:hover {
   color: var(--bs-primary);
+}
+.footer-row .menu-footer-navigation-menu-container .current-menu-item a {
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: var(--bs-primary);
+  text-decoration: none;
 }
 .footer-row .some-links {
   margin: 15px 0;
@@ -13353,4 +13376,163 @@ body {
   color: var(--bs-darker-text);
   font-weight: bold;
   margin-bottom: 25px;
+}
+
+/****************** RESPONSIVNESS ******************/
+@media (max-width: 1199.98px) {
+  .header .image-container {
+    width: 85%;
+  }
+  .primary-block-component .row {
+    justify-content: center !important;
+  }
+  .primary-block-component .row .primary-block-image {
+    margin-bottom: 25px;
+  }
+  .primary-block-component .row .primary-block-text-container {
+    width: 85%;
+  }
+  .primary-block-component .row .primary-block-text-container h2, .primary-block-component .row .primary-block-text-container .h2 {
+    font-size: 30px;
+  }
+  .shop-introduction-component .shop-introduction-container {
+    width: 70%;
+  }
+  .testimonials-component .testimonials-container {
+    width: 75%;
+  }
+  .testimonials-component .card-body {
+    padding: 0 10px !important;
+  }
+  .feed-component .feed-container {
+    width: 75%;
+  }
+}
+@media (max-width: 991.98px) {
+  .header .image-container {
+    width: 60%;
+  }
+  .big-hero-component .big-hero-content-container h1, .big-hero-component .big-hero-content-container .h1 {
+    font-size: 45px;
+    width: 100%;
+  }
+  .big-hero-component .big-hero-content-container p {
+    width: 95%;
+  }
+  .primary-block-component .row .primary-block-text-container {
+    width: 100%;
+  }
+  .primary-block-component .row .primary-block-text-container h2, .primary-block-component .row .primary-block-text-container .h2 {
+    font-size: 30px;
+  }
+  .testimonials-component .card-body {
+    padding: 30px !important;
+  }
+  .address-contact-component .address-contact-container {
+    padding: 75px 0;
+  }
+  .feed-component .feed-container {
+    width: 80%;
+  }
+}
+@media (max-width: 767.98px) {
+  .header .image-container {
+    width: 80%;
+  }
+  .promotion-banner-component {
+    background-color: var(--bs-dark-green);
+  }
+  .promotion-banner-component h2, .promotion-banner-component .h2 {
+    font-size: 30px;
+  }
+  .promotion-banner-component .btn-primary {
+    font-size: 15px;
+  }
+  .shop-introduction-component .shop-introduction-container {
+    width: 90%;
+  }
+  .testimonials-component .testimonials-container {
+    width: 90%;
+  }
+  .testimonials-component .testimonials-container h2, .testimonials-component .testimonials-container .h2 {
+    font-size: 30px;
+  }
+  .feed-component .feed-container {
+    width: 100%;
+  }
+  .footer .footer-menu-row {
+    flex-direction: column;
+  }
+  .footer h4, .footer .h4 {
+    font-size: 30px;
+  }
+  .footer .quicklinks-container .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .quicklinks-container .menu li {
+    margin: 25px 15px;
+  }
+  .footer .quicklinks-container .menu li a {
+    font-size: 25px;
+  }
+  .footer .address-contact-container {
+    margin: 40px 0;
+  }
+  .footer .opening-hours-container {
+    justify-content: flex-start !important;
+  }
+  .footer .some-links-container {
+    margin-top: 40px;
+    justify-content: flex-start !important;
+  }
+  .footer p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .header .image-container {
+    width: 90%;
+  }
+  .shop-introduction-component .shop-introduction-container {
+    width: 95%;
+  }
+  .testimonials-component .testimonials-container h2, .testimonials-component .testimonials-container .h2 {
+    font-size: 25px;
+  }
+  .address-contact-component .address-contact-text-container p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .header .image-container {
+    width: 100%;
+  }
+  .shop-introduction-component .shop-introduction-container h2, .shop-introduction-component .shop-introduction-container .h2 {
+    font-size: 30px;
+  }
+  .shop-introduction-component .shop-introduction-container p {
+    font-size: 16px;
+  }
+  .promotion-banner-component {
+    background-color: var(--bs-dark-green);
+  }
+  .promotion-banner-component h2, .promotion-banner-component .h2 {
+    font-size: 23px;
+  }
+  .promotion-banner-component .btn-primary {
+    font-size: 15px;
+  }
+  .testimonials-component .testimonials-container {
+    width: 100%;
+  }
+  .testimonials-component .testimonials-container h2, .testimonials-component .testimonials-container .h2 {
+    font-size: 25px;
+  }
+  .address-contact-component .address-contact-text-container p {
+    line-height: 30px;
+  }
+  .feed-component p {
+    font-size: 15px;
+  }
 }

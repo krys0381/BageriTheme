@@ -9,7 +9,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-image-container d-none d-xl-flex d-lg-flex d-md-flex align-item-center justify-self-center">
+    <div class="bg-image-container d-flex d-xl-flex d-lg-flex d-md-flex align-item-center justify-self-center">
         <?php if ( isset( $attributes['background-image']['url'] ) ) : ?>
   			<img src="<?php echo esc_url( $attributes['background-image']['url'] ); ?>" alt="<?php echo esc_attr( $attributes['background-image']['alt'] ); ?>">
 		<?php endif; ?>
