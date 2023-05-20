@@ -8,7 +8,7 @@
 
 <div class="shop-container container-fluid overflow-hidden">
 	<div class="container">
-	  	<div class="row d-flex justify-content-between">
+	  	<div class="row d-flex">
 	  	  	<div class="shop-sidebar-container d-flex flex-column col-xl-3 col-lg-3 col-sm-12 col-12">
                 <div class="shop-sidebar-content">
                     <h3>Product Category</h3>
@@ -18,8 +18,8 @@
 	  	  	</div>
 	  	  	<div class="shop-content-container d-flex flex-column align-items-center col-xl-9 col-lg-9 col-sm-12 col-12">
                 <div class="shop-filter-search-container d-flex">
-                    <div class="shop-filter col-6"></div>
-                    <div class="shop-search col-6 d-flex justify-content-end">
+                    <div class="shop-filter col-lg-6 col-2"></div>
+                    <div class="shop-search col-lg-6 col-10 d-flex justify-content-end">
                         <?php aws_get_search_form( true ); ?>
                     </div>
                 </div>

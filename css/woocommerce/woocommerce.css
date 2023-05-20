@@ -762,6 +762,7 @@ p.demo_store a,
   padding: 0.5em;
   min-width: 1em;
   display: block;
+  color: #E59D35;
 }
 .woocommerce nav.woocommerce-pagination ul li span.current,
 .woocommerce nav.woocommerce-pagination ul li a:hover,
@@ -777,7 +778,9 @@ p.demo_store a,
   padding-top: 0.5em;
   margin-left: 10px;
   display: inline-block;
-  color: #3D362D;
+  color: #E59D35;
+  font-weight: 600;
+  text-decoration: underline !important;
 }
 .woocommerce #reviews h2 small {
   float: right;

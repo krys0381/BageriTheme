@@ -685,6 +685,7 @@ p.demo_store,
 					padding: 0.5em;
 					min-width: 1em;
 					display: block;
+					color: #E59D35;
 				}
 
 				span.current,
@@ -706,7 +707,9 @@ p.demo_store,
 		padding-top: 0.5em;
 		margin-left: 10px;
 		display: inline-block;
-		color: #3D362D;
+		color: #E59D35;
+		font-weight: 600;
+		text-decoration: underline!important;
 	}
 
 	/**
