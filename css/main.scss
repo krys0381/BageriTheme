@@ -454,14 +454,18 @@ body {
     position: relative;
     min-height: 500px;
 
-    .promotion-banner-content-container{
-        z-index: 1;
+    .row {
+        width: 100%;
 
-        h2 {
-            text-align: center;
-            margin-bottom: 15px;
-            width: 100%;
-            color: var(--bs-lighter-text);
+        .promotion-banner-content-container{
+            z-index: 1;
+    
+            h2 {
+                text-align: center;
+                margin-bottom: 15px;
+                width: 100%;
+                color: var(--bs-lighter-text);
+            }
         }
     }
 
@@ -849,10 +853,13 @@ body {
 
     .bg-image-container{
         width: 100%;
+        height: 1005;
         position: absolute;
     
         img {
             width: 100%;
+            height: auto;
+            object-fit: cover;
             filter: brightness(60%);
         }
     }
@@ -860,7 +867,7 @@ body {
 
 /****************** ABOUT US - DISCOVER OUR STORY ******************/
 
-.secondary-block-container {
+.secondary-block-component {
     background-color: var(--bs-primary-background);
 
     .row{
@@ -898,7 +905,7 @@ body {
 
 /****************** ABOUT US - GALLERY ******************/
 
-.gallery-container {
+.gallery-component {
     background-color: var(--bs-primary-background);
 
     .row{
@@ -1739,6 +1746,44 @@ body {
             width: 75%;
         }
     }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    font-size: 52px;
+                }
+            }
+
+            .secondary-block-text-container {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 35px;
+
+                h3 {
+                    font-size: 27px;
+                }
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 35px;
+
+                h3 {
+                    font-size: 27px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -1787,6 +1832,54 @@ body {
     .feed-component {
         .feed-container {
             width: 80%;
+        }
+    }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    width: 90%;
+                }
+            }
+
+            .secondary-block-text-container {
+                width: 100%;
+            }
+        }
+    }
+
+    .about-philosophy-component {
+        .about-philosophy-container {
+            width: 75%;
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 115px;
+
+                h3 {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 115px;
+
+                h3 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    .tertiary-block-component {
+        .tertiary-block-container {
+            width: 100%;
         }
     }
 }
@@ -1869,6 +1962,44 @@ body {
             font-size: 25px;
         }
     }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .about-philosophy-component {
+        .about-philosophy-container {
+            width: 80%;
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 80px;
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 80px;
+            }
+        }
+    }
+
+    .tertiary-block-component {
+        .tertiary-block-container .tertiary-block-text-container {
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
 }
 
 @media (max-width: 550px) {
@@ -1922,6 +2053,58 @@ body {
             }
         }
     }
+
+    .small-hero-component {
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+
+    .about-philosophy-component {
+        .about-philosophy-container {
+            width: 95%;
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 60px;
+
+                h3 {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 60px;
+
+                h3 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .tertiary-block-component {
+        .tertiary-block-container .tertiary-block-text-container {
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -1968,7 +2151,7 @@ body {
 
     .promotion-banner-component {
         h2 {
-            font-size: 23px;
+            font-size: 30px;
         }
 
         .btn-primary {
@@ -1998,6 +2181,68 @@ body {
     .feed-component {
         p {
             font-size: 15px;
+        }
+    }
+
+    .small-hero-component {
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    font-size: 34px;
+                }
+            }
+
+            .secondary-block-text-container {
+                h2 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    .about-philosophy-component {
+        .about-philosophy-container {
+            width: 100%;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 40px;
+
+                h3 {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 40px;
+
+                h3 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    .tertiary-block-component {
+        .tertiary-block-container .tertiary-block-text-container {
+            h2 {
+                font-size: 24px;
+            }
         }
     }
 }

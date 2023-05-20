@@ -12382,10 +12382,13 @@ body {
   position: relative;
   min-height: 500px;
 }
-.promotion-banner-component .promotion-banner-content-container {
+.promotion-banner-component .row {
+  width: 100%;
+}
+.promotion-banner-component .row .promotion-banner-content-container {
   z-index: 1;
 }
-.promotion-banner-component .promotion-banner-content-container h2, .promotion-banner-component .promotion-banner-content-container .h2 {
+.promotion-banner-component .row .promotion-banner-content-container h2, .promotion-banner-component .row .promotion-banner-content-container .h2 {
   text-align: center;
   margin-bottom: 15px;
   width: 100%;
@@ -12705,57 +12708,61 @@ body {
 }
 .small-hero-component .bg-image-container {
   width: 100%;
+  height: 1005;
   position: absolute;
 }
 .small-hero-component .bg-image-container img {
   width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: brightness(60%);
 }
 
 /****************** ABOUT US - DISCOVER OUR STORY ******************/
-.secondary-block-container {
+.secondary-block-component {
   background-color: var(--bs-primary-background);
 }
-.secondary-block-container .row {
+.secondary-block-component .row {
   padding: 30px 0;
 }
-.secondary-block-container .row .secondary-block-title p {
+.secondary-block-component .row .secondary-block-title p {
   text-align: center;
   font-size: 65px;
   font-weight: 600;
   letter-spacing: 0px;
   color: var(--bs-tertiary-background);
 }
-.secondary-block-container .row .secondary-block-text-container {
+.secondary-block-component .row .secondary-block-text-container {
   width: 50%;
 }
-.secondary-block-container .row .secondary-block-text-container h2, .secondary-block-container .row .secondary-block-text-container .h2 {
+.secondary-block-component .row .secondary-block-text-container h2, .secondary-block-component .row .secondary-block-text-container .h2 {
   color: var(--bs-darker-text);
   text-align: left;
   margin: 0 0 20px 10px;
   width: 90%;
 }
-.secondary-block-container .row .secondary-block-text-container p {
+.secondary-block-component .row .secondary-block-text-container p {
   color: var(--bs-darker-text);
   margin: 0 0 20px 10px !important;
   width: 90%;
 }
 
 /****************** ABOUT US - GALLERY ******************/
-.gallery-container {
+.gallery-component {
   background-color: var(--bs-primary-background);
 }
-.gallery-container .row {
+.gallery-component .row {
   padding: 30px 0;
 }
-.gallery-container .gallery {
+.gallery-component .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 7px;
   margin: 0;
 }
-.gallery-container .gallery img {
+.gallery-component .gallery img {
   height: 100%;
   width: 100%;
 }
@@ -13412,6 +13419,24 @@ body {
   .feed-component .feed-container {
     width: 75%;
   }
+  .secondary-block-component .row .secondary-block-title p {
+    font-size: 52px;
+  }
+  .secondary-block-component .row .secondary-block-text-container p {
+    width: 100%;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body {
+    padding: 35px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-dark .card-body .h3 {
+    font-size: 27px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body {
+    padding: 35px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-light .card-body .h3 {
+    font-size: 27px;
+  }
 }
 @media (max-width: 991.98px) {
   .header .image-container {
@@ -13438,6 +13463,30 @@ body {
   }
   .feed-component .feed-container {
     width: 80%;
+  }
+  .secondary-block-component .row .secondary-block-title p {
+    width: 90%;
+  }
+  .secondary-block-component .row .secondary-block-text-container {
+    width: 100%;
+  }
+  .about-philosophy-component .about-philosophy-container {
+    width: 75%;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body {
+    padding: 115px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-dark .card-body .h3 {
+    font-size: 32px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body {
+    padding: 115px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-light .card-body .h3 {
+    font-size: 32px;
+  }
+  .tertiary-block-component .tertiary-block-container {
+    width: 100%;
   }
 }
 @media (max-width: 767.98px) {
@@ -13491,6 +13540,21 @@ body {
   .footer p {
     font-size: 25px;
   }
+  .secondary-block-component .row .secondary-block-title p {
+    width: 100%;
+  }
+  .about-philosophy-component .about-philosophy-container {
+    width: 80%;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body {
+    padding: 80px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body {
+    padding: 80px;
+  }
+  .tertiary-block-component .tertiary-block-container .tertiary-block-text-container h2, .tertiary-block-component .tertiary-block-container .tertiary-block-text-container .h2 {
+    font-size: 36px;
+  }
 }
 @media (max-width: 550px) {
   .header .image-container {
@@ -13518,6 +13582,30 @@ body {
   .address-contact-component .address-contact-text-container p {
     font-size: 16px;
   }
+  .small-hero-component h1, .small-hero-component .h1 {
+    font-size: 45px;
+  }
+  .secondary-block-component .row .secondary-block-title p {
+    font-size: 45px;
+  }
+  .about-philosophy-component .about-philosophy-container {
+    width: 95%;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body {
+    padding: 60px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-dark .card-body .h3 {
+    font-size: 28px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body {
+    padding: 60px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-light .card-body .h3 {
+    font-size: 28px;
+  }
+  .tertiary-block-component .tertiary-block-container .tertiary-block-text-container h2, .tertiary-block-component .tertiary-block-container .tertiary-block-text-container .h2 {
+    font-size: 32px;
+  }
 }
 @media (max-width: 450px) {
   .header .image-container {
@@ -13544,7 +13632,7 @@ body {
     font-size: 16px;
   }
   .promotion-banner-component h2, .promotion-banner-component .h2 {
-    font-size: 23px;
+    font-size: 30px;
   }
   .promotion-banner-component .btn-primary {
     font-size: 15px;
@@ -13560,5 +13648,35 @@ body {
   }
   .feed-component p {
     font-size: 15px;
+  }
+  .small-hero-component h1, .small-hero-component .h1 {
+    font-size: 35px;
+  }
+  .secondary-block-component .row .secondary-block-title p {
+    font-size: 34px;
+  }
+  .secondary-block-component .row .secondary-block-text-container h2, .secondary-block-component .row .secondary-block-text-container .h2 {
+    font-size: 32px;
+  }
+  .about-philosophy-component .about-philosophy-container {
+    width: 100%;
+  }
+  .about-philosophy-component .about-philosophy-container h2, .about-philosophy-component .about-philosophy-container .h2 {
+    font-size: 30px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body {
+    padding: 40px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-dark .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-dark .card-body .h3 {
+    font-size: 26px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body {
+    padding: 40px;
+  }
+  .about-philosophy-component .tiles-row .card-group .tile-light .card-body h3, .about-philosophy-component .tiles-row .card-group .tile-light .card-body .h3 {
+    font-size: 26px;
+  }
+  .tertiary-block-component .tertiary-block-container .tertiary-block-text-container h2, .tertiary-block-component .tertiary-block-container .tertiary-block-text-container .h2 {
+    font-size: 24px;
   }
 }

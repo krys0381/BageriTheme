@@ -1,6 +1,6 @@
 <!-- ABOUT US - BAKERY GALLERY -->
 
-<div class="gallery-container container-fluid overflow-hidden">
+<div class="gallery-component container-fluid overflow-hidden">
 	<div class="container">
 	  	<div class="row d-flex justify-content-between">
 
