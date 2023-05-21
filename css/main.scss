@@ -1566,10 +1566,10 @@ body {
     background-color: var(--bs-primary-background);
     margin-top: 30px;
 
-    .contact-info-text-container {
+    .contact-info-header-container {
         width: 50%;
     
-        .contact-info-text {
+        .contact-info-header {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1590,7 +1590,7 @@ body {
         }
     }
 
-    .contact-info-container {
+    .contact-info-content-container {
         border-right: 2px solid var(--bs-tertiary-background);
 
         &:last-child{
@@ -1598,6 +1598,7 @@ body {
         }
 
         .contact-info-content {
+            width: 100%;
     
             .contact-info-icon {
                 margin-bottom: 10px;
@@ -1845,6 +1846,38 @@ body {
             }
         }
     }
+
+    .custom-cake-form-header-component {
+        .custom-cake-form-header-text-container {
+            width: 85%;
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+            width: 70%;
+        }
+
+        .contact-info-content-container {
+            padding: 0 10px;
+            
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .message-form-component .row .wpforms-container {
+        width: 70%;
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 25%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        width: 60%;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -1965,6 +1998,58 @@ body {
             width: 60%;
         }
     }
+
+    .custom-cake-form-header-component {
+        .custom-cake-form-header-text-container {
+            width: 100%;
+
+            .custom-cake-form-header-text h2 {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .custom-cake-order-form-component .row {
+        .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+            width: 100%;
+        }
+
+        .custom-cake-order-form-image {
+            margin-bottom: 30px;
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+            width: 92%;
+
+        }
+
+        .contact-info-content-container {
+
+            p {
+                font-size: 12px;  
+            }
+
+            .contact-info-content {
+                .contact-info-icon {
+                    height: 40px;
+                } 
+            }
+        }
+    }
+
+    .message-form-component .row .wpforms-container {
+        width: 80%;
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 28%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        width: 70%;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -2010,7 +2095,7 @@ body {
         }
 
         h4 {
-            font-size: 30px;
+            font-size: 26px;
         }
 
         .quicklinks-container{
@@ -2022,7 +2107,7 @@ body {
                     margin: 25px 15px;
 
                     a {
-                        font-size: 25px;
+                        font-size: 23px;
                     }
                 }
             }
@@ -2042,7 +2127,7 @@ body {
         }
 
         p {
-            font-size: 25px;
+            font-size: 23px;
         }
     }
 
@@ -2089,6 +2174,58 @@ body {
         .shop-filter-search-container .shop-search .aws-container {
             width: 75%;
         }
+    }
+
+    .custom-cake-order-form-component .row {
+        .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+            
+            .wpforms-submit-container .wpforms-submit {
+                width: 32%;
+            }
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+            width: 100%;
+            
+
+            .contact-info-header h2 {
+                font-size: 30px;
+            }
+        }
+
+        .contact-info-container {
+            flex-direction: column;
+
+            .contact-info-content-container{
+                padding: 10px 0;
+                border-right: none;
+                border-bottom: 2px solid var(--bs-tertiary-background);
+
+                &:last-child{
+                    border-bottom: none;
+                }
+
+                .contact-info-content {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }    
+        }
+    }
+
+    .message-form-component .row .wpforms-container {
+        width: 95%;
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 32%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        width: 100%;
     }
 }
 
@@ -2211,6 +2348,50 @@ body {
 
         .shop-filter-search-container .shop-search .aws-container {
             width: 90%;
+        }
+    }
+
+    .custom-cake-form-header-component {
+        .custom-cake-form-header-text-container {
+
+            .custom-cake-form-header-text h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .custom-cake-order-form-component .row {
+        .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+            
+            .wpforms-submit-container .wpforms-submit {
+                width: 42%;
+            }
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+
+            .contact-info-header h2 {
+                font-size: 29px;
+            }
+
+            .contact-info-header h3 {
+                font-size: 25px;
+            }
+        }   
+    }
+
+    .message-form-component .row .wpforms-container {
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 40%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        .contact-map-text h3 {
+            font-size: 27px;
         }
     }
 }
@@ -2376,6 +2557,61 @@ body {
                     font-size: 13px;
                 }
             }
+        }
+    }
+
+    .custom-cake-form-header-component {
+        margin: 0;
+
+        .custom-cake-form-header-text-container {
+            .custom-cake-form-header-text h2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .custom-cake-order-form-component .row {
+        .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+            
+            .wpforms-submit-container .wpforms-submit {
+                width: 58%;
+            }
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+
+            .contact-info-header h2 {
+                font-size: 22px;
+            }
+        }
+
+        .contact-info-container {
+            .contact-info-content-container {
+                .contact-info-content {
+                    p {
+                        font-size: 16px;  
+                    }
+    
+                    .contact-info-icon {
+                        height: 38px;
+                    } 
+                }
+            }
+        }
+    }
+
+    .message-form-component .row .wpforms-container {
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 54%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        .contact-map-text h3 {
+            font-size: 25px;
         }
     }
 }

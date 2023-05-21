@@ -13274,45 +13274,48 @@ body {
   background-color: var(--bs-primary-background);
   margin-top: 30px;
 }
-.contact-info-component .contact-info-text-container {
+.contact-info-component .contact-info-header-container {
   width: 50%;
 }
-.contact-info-component .contact-info-text-container .contact-info-text {
+.contact-info-component .contact-info-header-container .contact-info-header {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.contact-info-component .contact-info-text-container .contact-info-text h2, .contact-info-component .contact-info-text-container .contact-info-text .h2 {
+.contact-info-component .contact-info-header-container .contact-info-header h2, .contact-info-component .contact-info-header-container .contact-info-header .h2 {
   text-align: center;
   color: var(--bs-darker-text);
   margin-bottom: 15px;
 }
-.contact-info-component .contact-info-text-container .contact-info-text h3, .contact-info-component .contact-info-text-container .contact-info-text .h3 {
+.contact-info-component .contact-info-header-container .contact-info-header h3, .contact-info-component .contact-info-header-container .contact-info-header .h3 {
   text-align: center;
   color: var(--bs-darker-text);
   font-weight: bold;
   margin: 50px 0 0 0;
 }
-.contact-info-component .contact-info-container {
+.contact-info-component .contact-info-content-container {
   border-right: 2px solid var(--bs-tertiary-background);
 }
-.contact-info-component .contact-info-container:last-child {
+.contact-info-component .contact-info-content-container:last-child {
   border-right: none;
 }
-.contact-info-component .contact-info-container .contact-info-content .contact-info-icon {
+.contact-info-component .contact-info-content-container .contact-info-content {
+  width: 100%;
+}
+.contact-info-component .contact-info-content-container .contact-info-content .contact-info-icon {
   margin-bottom: 10px;
   height: 50px;
 }
-.contact-info-component .contact-info-container .contact-info-content .contact-info-icon img {
+.contact-info-component .contact-info-content-container .contact-info-content .contact-info-icon img {
   height: 100%;
   color: var(--bs-primary);
 }
-.contact-info-component .contact-info-container .contact-info-content h4, .contact-info-component .contact-info-container .contact-info-content .h4 {
+.contact-info-component .contact-info-content-container .contact-info-content h4, .contact-info-component .contact-info-content-container .contact-info-content .h4 {
   color: var(--bs-darker-text);
   margin-bottom: 10px;
 }
-.contact-info-component .contact-info-container .contact-info-content p {
+.contact-info-component .contact-info-content-container .contact-info-content p {
   color: var(--bs-darker-text);
   margin-bottom: 10px;
 }
@@ -13474,6 +13477,27 @@ body {
     padding: 0;
     font-size: 20px;
   }
+  .custom-cake-form-header-component .custom-cake-form-header-text-container {
+    width: 85%;
+  }
+  .contact-info-component .contact-info-header-container {
+    width: 70%;
+  }
+  .contact-info-component .contact-info-content-container {
+    padding: 0 10px;
+  }
+  .contact-info-component .contact-info-content-container p {
+    font-size: 17px;
+  }
+  .message-form-component .row .wpforms-container {
+    width: 70%;
+  }
+  .message-form-component .row .wpforms-container .wpforms-submit-container .wpforms-submit {
+    width: 25%;
+  }
+  .contact-map-component .contact-map-text-container {
+    width: 60%;
+  }
 }
 @media (max-width: 991.98px) {
   .header .image-container {
@@ -13537,6 +13561,36 @@ body {
   .shop-container .row .shop-filter-search-container .shop-search .aws-container {
     width: 60%;
   }
+  .custom-cake-form-header-component .custom-cake-form-header-text-container {
+    width: 100%;
+  }
+  .custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text h2, .custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text .h2 {
+    font-size: 35px;
+  }
+  .custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+    width: 100%;
+  }
+  .custom-cake-order-form-component .row .custom-cake-order-form-image {
+    margin-bottom: 30px;
+  }
+  .contact-info-component .contact-info-header-container {
+    width: 92%;
+  }
+  .contact-info-component .contact-info-content-container p {
+    font-size: 12px;
+  }
+  .contact-info-component .contact-info-content-container .contact-info-content .contact-info-icon {
+    height: 40px;
+  }
+  .message-form-component .row .wpforms-container {
+    width: 80%;
+  }
+  .message-form-component .row .wpforms-container .wpforms-submit-container .wpforms-submit {
+    width: 28%;
+  }
+  .contact-map-component .contact-map-text-container {
+    width: 70%;
+  }
 }
 @media (max-width: 767.98px) {
   .header .image-container {
@@ -13564,7 +13618,7 @@ body {
     flex-direction: column;
   }
   .footer h4, .footer .h4 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .footer .quicklinks-container .menu {
     display: flex;
@@ -13574,7 +13628,7 @@ body {
     margin: 25px 15px;
   }
   .footer .quicklinks-container .menu li a {
-    font-size: 25px;
+    font-size: 23px;
   }
   .footer .address-contact-container {
     margin: 40px 0;
@@ -13587,7 +13641,7 @@ body {
     justify-content: flex-start !important;
   }
   .footer p {
-    font-size: 25px;
+    font-size: 23px;
   }
   .secondary-block-component .row .secondary-block-title p {
     width: 100%;
@@ -13606,6 +13660,38 @@ body {
   }
   .shop-container .row .shop-filter-search-container .shop-search .aws-container {
     width: 75%;
+  }
+  .custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-submit-container .wpforms-submit {
+    width: 32%;
+  }
+  .contact-info-component .contact-info-header-container {
+    width: 100%;
+  }
+  .contact-info-component .contact-info-header-container .contact-info-header h2, .contact-info-component .contact-info-header-container .contact-info-header .h2 {
+    font-size: 30px;
+  }
+  .contact-info-component .contact-info-container {
+    flex-direction: column;
+  }
+  .contact-info-component .contact-info-container .contact-info-content-container {
+    padding: 10px 0;
+    border-right: none;
+    border-bottom: 2px solid var(--bs-tertiary-background);
+  }
+  .contact-info-component .contact-info-container .contact-info-content-container:last-child {
+    border-bottom: none;
+  }
+  .contact-info-component .contact-info-container .contact-info-content-container .contact-info-content p {
+    font-size: 18px;
+  }
+  .message-form-component .row .wpforms-container {
+    width: 95%;
+  }
+  .message-form-component .row .wpforms-container .wpforms-submit-container .wpforms-submit {
+    width: 32%;
+  }
+  .contact-map-component .contact-map-text-container {
+    width: 100%;
   }
 }
 @media (max-width: 550px) {
@@ -13666,6 +13752,24 @@ body {
   }
   .shop-container .row .shop-filter-search-container .shop-search .aws-container {
     width: 90%;
+  }
+  .custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text h2, .custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text .h2 {
+    font-size: 32px;
+  }
+  .custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-submit-container .wpforms-submit {
+    width: 42%;
+  }
+  .contact-info-component .contact-info-header-container .contact-info-header h2, .contact-info-component .contact-info-header-container .contact-info-header .h2 {
+    font-size: 29px;
+  }
+  .contact-info-component .contact-info-header-container .contact-info-header h3, .contact-info-component .contact-info-header-container .contact-info-header .h3 {
+    font-size: 25px;
+  }
+  .message-form-component .row .wpforms-container .wpforms-submit-container .wpforms-submit {
+    width: 40%;
+  }
+  .contact-map-component .contact-map-text-container .contact-map-text h3, .contact-map-component .contact-map-text-container .contact-map-text .h3 {
+    font-size: 27px;
   }
 }
 @media (max-width: 450px) {
@@ -13749,5 +13853,29 @@ body {
   }
   .shop-container .row .products li.product .button {
     font-size: 13px;
+  }
+  .custom-cake-form-header-component {
+    margin: 0;
+  }
+  .custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text h2, .custom-cake-form-header-component .custom-cake-form-header-text-container .custom-cake-form-header-text .h2 {
+    font-size: 24px;
+  }
+  .custom-cake-order-form-component .row .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container .wpforms-submit-container .wpforms-submit {
+    width: 58%;
+  }
+  .contact-info-component .contact-info-header-container .contact-info-header h2, .contact-info-component .contact-info-header-container .contact-info-header .h2 {
+    font-size: 22px;
+  }
+  .contact-info-component .contact-info-container .contact-info-content-container .contact-info-content p {
+    font-size: 16px;
+  }
+  .contact-info-component .contact-info-container .contact-info-content-container .contact-info-content .contact-info-icon {
+    height: 38px;
+  }
+  .message-form-component .row .wpforms-container .wpforms-submit-container .wpforms-submit {
+    width: 54%;
+  }
+  .contact-map-component .contact-map-text-container .contact-map-text h3, .contact-map-component .contact-map-text-container .contact-map-text .h3 {
+    font-size: 25px;
   }
 }
