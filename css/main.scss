@@ -1230,6 +1230,10 @@ body {
 
     /****************** SHOP - CHECKOUT ******************/
 
+    .wc-block-components-combobox .wc-block-components-combobox-control input.components-combobox-control__input, .wc-block-components-form .wc-block-components-combobox .wc-block-components-combobox-control input.components-combobox-control__input {
+        border-radius: 0;
+    }
+    
     .wp-block-woocommerce-checkout {
         .wc-block-components-text-input {
             input {
@@ -1728,6 +1732,42 @@ body {
     }
 }
 
+/****************** TERMS AND CODITIONS ******************/
+
+.terms-component {
+    background-color: var(--bs-primary-background);
+    padding: 60px 0 0 0;
+
+    .row{
+        padding: 30px 0;
+
+        h1 {
+            color: var(--bs-darker-text);
+            width: 75%;
+        }
+    
+        ol {
+            padding: 0 0 1.5em 3em;
+            margin: 0;
+            font-weight: bold;
+    
+            li {
+                font-size: 18px;
+            }
+    
+            ul {
+                margin: 0;
+    
+                li {
+                    font-size: 18px;
+                    font-weight: normal;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
 /****************** RESPONSIVNESS ******************/
 
 @media (max-width: 1199.98px) {
@@ -1999,6 +2039,12 @@ body {
         }
     }
 
+    #checkout {
+        .shop-sidebar-container {
+            margin-top: 25px;
+        }
+    }
+
     .custom-cake-form-header-component {
         .custom-cake-form-header-text-container {
             width: 100%;
@@ -2227,6 +2273,13 @@ body {
     .contact-map-component .contact-map-text-container {
         width: 100%;
     }
+
+    .terms-component .row {
+        h1 {
+            width: 100%;
+            font-size: 38px;
+        }
+    }
 }
 
 @media (max-width: 550px) {
@@ -2392,6 +2445,25 @@ body {
     .contact-map-component .contact-map-text-container {
         .contact-map-text h3 {
             font-size: 27px;
+        }
+    }
+
+    .terms-component .row {
+        p {
+            font-size: 16px;
+        }
+
+        ol {
+            li {
+                font-size: 16px;
+            }
+    
+            ul {
+    
+                li {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -2560,6 +2632,10 @@ body {
         }
     }
 
+    .single-product-container h2 {
+        font-size: 28px;
+    }
+
     .custom-cake-form-header-component {
         margin: 0;
 
@@ -2612,6 +2688,12 @@ body {
     .contact-map-component .contact-map-text-container {
         .contact-map-text h3 {
             font-size: 25px;
+        }
+    }
+
+    .terms-component .row {
+        h1 {
+            font-size: 32px;
         }
     }
 }
