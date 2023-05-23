@@ -23,7 +23,7 @@
 			</div>
 
 			<div class="map-container col-lg-6 col-sm-12 col-12 d-flex flex-column align-items-center justify-content-center">
-				<iframe src="<?php echo $attributes["map-link"]?>" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="<?php echo $attributes["map-link"]?>" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps frame"></iframe>
             </div>
         </div>
     </div>

@@ -69,10 +69,10 @@
 							</div>
 						</div>
 						<div class="account-icon-container col-2 d-none d-xl-flex align-items-center justify-content-center">
-							<a href="/my-account"><i class="bi bi-person-fill"></i></a>
+							<a href="/my-account" aria-label="Login to your account"><i class="bi bi-person-fill"></i></a>
 						</div>
 						<div class="cart-icon-container col-2 d-none d-xl-flex align-items-center justify-content-center">
-							<a href="/cart"><i class="bi bi-basket2-fill"></i></a>
+							<a href="/cart" aria-label="Go to your Shop cart"><i class="bi bi-basket2-fill"></i></a>
 						</div>
 						<div class="col-2"></div>
 
@@ -92,8 +92,8 @@
                                 <div class="offcanvas-body">
 									<?php wp_nav_menu(array("theme_location" => "mobile-nav-menu-location")) ?>
 									<ul>
-										<li><a href="/my-account"><i class="bi bi-person-fill"></i>LOGIN</a></li>
-										<li><a href="/cart"><i class="bi bi-basket2-fill"></i>CART</a></li>
+										<li><a href="/my-account" aria-label="Login to your account"><i class="bi bi-person-fill"></i>LOGIN</a></li>
+										<li><a href="/cart" aria-label="Go to your Shop cart"><i class="bi bi-basket2-fill"></i>CART</a></li>
 									</ul>
   									<ul class="languages-mobile-container">
   									  <li><a class="language active" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/uk.png" alt="">EN</a></li>

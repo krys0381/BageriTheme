@@ -12105,6 +12105,7 @@ body {
 }
 .header .image-container img {
   width: 100%;
+  height: auto;
 }
 .header .header-navigation {
   display: flex;
@@ -12149,6 +12150,7 @@ body {
 }
 .header .languages-container .btn img {
   width: 35%;
+  height: auto;
   margin-right: 7px;
 }
 .header .languages-container ul {
@@ -12163,6 +12165,7 @@ body {
 }
 .header .languages-container ul li a img {
   width: 40%;
+  height: auto;
   margin-right: 7px;
 }
 .header .account-icon-container a {
@@ -12234,7 +12237,8 @@ body {
   color: var(--bs-lighter-text);
 }
 .mobile-navigation .offcanvas .offcanvas-header .btn-close {
-  color: var(--bs-primary-background) !important;
+  border-radius: 50%;
+  background-color: var(--bs-primary);
 }
 .mobile-navigation .offcanvas .offcanvas-body {
   padding: 0 16px 16px 16px;
@@ -12255,6 +12259,7 @@ body {
 }
 .mobile-navigation .offcanvas .offcanvas-body .languages-mobile-container li .language img {
   width: 50%;
+  height: auto;
   margin-right: 7px;
 }
 .mobile-navigation .offcanvas-footer {
@@ -12369,6 +12374,7 @@ body {
 }
 .primary-block-component .row .primary-block-image img {
   width: 100%;
+  height: auto;
 }
 .primary-block-component .row .primary-block-text-container {
   width: 50%;
@@ -12461,6 +12467,7 @@ body {
 .shop-categories-row .card-group a .shop-category img {
   border-radius: 0;
   height: 100%;
+  width: auto;
   transition: transform 0.5s ease;
 }
 .shop-categories-row .card-group a .shop-category:hover img {
@@ -12533,6 +12540,8 @@ body {
 }
 .testimonials-component .tiles-row .card-group .tile .card-body .testimonial-icon img {
   padding: 30px;
+  height: auto;
+  width: auto;
 }
 .testimonials-component .tiles-row .card-group .tile .card-body .card-text {
   color: var(--bs-lighter-text);
@@ -12693,6 +12702,8 @@ body {
 }
 .footer-end-container .payment-options-container img {
   margin: 0 10px;
+  width: auto;
+  height: auto;
 }
 
 /****************** ABOUT US - HERO ******************/
@@ -12871,34 +12882,6 @@ body {
   margin: 0;
 }
 
-/* .about-contact-component{
-    position: relative;
-    min-height: 500px;
-    margin: 60px 0;
-
-    .about-contact-content-container{
-        z-index: 1;
-
-        h2 {
-            text-align: center;
-            margin-bottom: 15px;
-            width: 85%;
-            color: var(--bs-lighter-text);
-        }
-    }
-
-    .bg-image-container{
-        width: 100%;
-        position: absolute;
-        transform-origin: top center;
-        transform: scale(1.0);
-
-        img {
-            width: 100%;
-            filter: brightness(60%);
-        }
-    }
-} */
 /****************** SHOP ******************/
 #cart {
   padding-top: 100px;
@@ -13312,6 +13295,7 @@ body {
 }
 .contact-info-component .contact-info-content-container .contact-info-content .contact-info-icon img {
   height: 100%;
+  width: auto;
   color: var(--bs-primary);
 }
 .contact-info-component .contact-info-content-container .contact-info-content h4, .contact-info-component .contact-info-content-container .contact-info-content .h4 {
@@ -13443,7 +13427,7 @@ body {
   margin-bottom: 10px;
 }
 
-/****************** RESPONSIVNESS ******************/
+/****************** MEDIA QUERIES ******************/
 @media (max-width: 1199.98px) {
   .header .image-container {
     width: 85%;

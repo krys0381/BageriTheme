@@ -3,7 +3,7 @@
 <div class="primary-block-component container-fluid overflow-hidden">
 	<div class="container">
 	  	<div class="row d-flex">
-	  	  	<div class="primary-block-image col-xl-6 col-lg-10 col-md-12 col-sm-12 col-12 d-flex align-items-center">
+	  	  	<div class="primary-block-image col-xl-6 col-lg-10 col-12 d-flex align-items-center">
 				<?php if ( isset( $attributes['image']['url'] ) ) : ?>
   					<img src="<?php echo esc_url( $attributes['image']['url'] ); ?>" alt="<?php echo esc_attr( $attributes['image']['alt'] ); ?>">
 				<?php endif; ?>
@@ -16,7 +16,7 @@
 	  	  	  	  	<p>
                         <?php echo $attributes["text"]?>	  	  	  	  	
                     </p>
-	  	  	  	  	<div class="primary-block-text-button col-lg-12 col-sm-12 col-12 d-flex justify-content-start align-item-center">
+	  	  	  	  	<div class="primary-block-text-button col-12 d-flex justify-content-start align-item-center">
 						<a href="<?php echo $attributes["button-link"]?>"><button type="button" class="btn btn-link"><?php echo $attributes["button-text"]?><i class="bi bi-arrow-right"></i></button></a>
 	  	  	  	  	</div>
 	  	  	  	</div>

@@ -1,0 +1,929 @@
+/****************** MEDIA QUERIES ******************/
+
+@media (max-width: 1199.98px) {
+    .header .image-container {
+        width: 85%;
+    }
+
+    .primary-block-component {
+        .row {
+            justify-content: center!important;
+
+            .primary-block-image {
+                margin-bottom: 25px;
+            }
+
+            .primary-block-text-container {
+                width: 85%;
+
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .shop-introduction-component {
+        .shop-introduction-container {
+            width: 70%;
+        }
+    }
+
+    .testimonials-component {
+        .testimonials-container {
+            width: 75%;
+        }
+
+        .card-body {
+            padding: 0 10px!important;
+        }
+    }
+
+    .feed-component {
+        .feed-container {
+            width: 75%;
+        }
+    }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    font-size: 52px;
+                }
+            }
+
+            .secondary-block-text-container {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 35px;
+
+                h3 {
+                    font-size: 27px;
+                }
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 35px;
+
+                h3 {
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+
+    .shop-container .row {
+        .shop-sidebar-container {
+            .shop-sidebar-content {
+                ul.products li.product {
+                    a {
+                        width: 80%;
+                    }
+                }
+
+                .btn-primary {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .products {
+            li.product {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .button {
+                    margin: 15px 0;
+                }
+
+                .added_to_cart {
+                    margin: 0 0 15px 0;
+                    padding: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .custom-cake-form-header-component {
+        .custom-cake-form-header-text-container {
+            width: 85%;
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+            width: 70%;
+        }
+
+        .contact-info-content-container {
+            padding: 0 10px;
+            
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .message-form-component .row .wpforms-container {
+        width: 70%;
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 25%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header .image-container {
+        width: 60%;
+    }
+
+    .big-hero-component {
+        .big-hero-content-container {
+
+            h1 {
+                font-size: 45px;
+                width: 100%;
+            }
+
+            p {
+                width: 95%;
+            }
+        }
+    }
+
+    .primary-block-component {
+        .row {
+            .primary-block-text-container {
+                width: 100%;
+
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .testimonials-component {
+        .card-body {
+            padding: 30px!important;
+        }
+    }
+
+    .address-contact-component {
+        .address-contact-container {
+            padding: 75px 0;
+        }
+    }
+
+    .feed-component {
+        .feed-container {
+            width: 80%;
+        }
+    }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    width: 90%;
+                }
+            }
+
+            .secondary-block-text-container {
+                width: 100%;
+            }
+        }
+    }
+
+    .about-philosophy-component {
+        .about-philosophy-container {
+            width: 75%;
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 115px;
+
+                h3 {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 115px;
+
+                h3 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    .tertiary-block-component {
+        .tertiary-block-container {
+            width: 100%;
+        }
+    }
+
+    .shop-container .row {
+        flex-direction: column-reverse;
+
+        .shop-sidebar-container {
+            .shop-sidebar-content {
+                ul.products li.product {
+                    a {
+                        width: 50%;
+                    }
+                }
+
+                .btn-primary {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .shop-filter-search-container .shop-search .aws-container {
+            width: 60%;
+        }
+    }
+
+    #checkout {
+        .shop-sidebar-container {
+            margin-top: 25px;
+        }
+    }
+
+    .custom-cake-form-header-component {
+        .custom-cake-form-header-text-container {
+            width: 100%;
+
+            .custom-cake-form-header-text h2 {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .custom-cake-order-form-component .row {
+        .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+            width: 100%;
+        }
+
+        .custom-cake-order-form-image {
+            margin-bottom: 30px;
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+            width: 92%;
+
+        }
+
+        .contact-info-content-container {
+
+            p {
+                font-size: 12px;  
+            }
+
+            .contact-info-content {
+                .contact-info-icon {
+                    height: 40px;
+                } 
+            }
+        }
+    }
+
+    .message-form-component .row .wpforms-container {
+        width: 80%;
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 28%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header .image-container {
+        width: 80%;
+    }
+
+    .promotion-banner-component {
+        h2 {
+            font-size: 30px;
+        }
+
+        .btn-primary {
+            font-size: 15px;
+        }
+    }
+
+    .shop-introduction-component {
+        .shop-introduction-container {
+            width: 90%;
+        }
+    }
+
+    .testimonials-component {
+        .testimonials-container {
+            width: 90%;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .feed-component {
+        .feed-container {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        .footer-menu-row {
+            flex-direction: column;
+        }
+
+        h4 {
+            font-size: 26px;
+        }
+
+        .quicklinks-container{
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    margin: 25px 15px;
+
+                    a {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+        .address-contact-container {
+            margin: 40px 0;
+        }
+
+        .opening-hours-container {
+            justify-content: flex-start!important;
+        }
+
+        .some-links-container{
+            margin-top: 40px;
+            justify-content: flex-start!important;
+        }
+
+        p {
+            font-size: 23px;
+        }
+    }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .about-philosophy-component {
+        .about-philosophy-container {
+            width: 80%;
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 80px;
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 80px;
+            }
+        }
+    }
+
+    .tertiary-block-component {
+        .tertiary-block-container .tertiary-block-text-container {
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .shop-container .row {
+
+        .shop-filter-search-container .shop-search .aws-container {
+            width: 75%;
+        }
+    }
+
+    .custom-cake-order-form-component .row {
+        .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+            
+            .wpforms-submit-container .wpforms-submit {
+                width: 32%;
+            }
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+            width: 100%;
+            
+
+            .contact-info-header h2 {
+                font-size: 30px;
+            }
+        }
+
+        .contact-info-container {
+            flex-direction: column;
+
+            .contact-info-content-container{
+                padding: 10px 0;
+                border-right: none;
+                border-bottom: 2px solid var(--bs-tertiary-background);
+
+                &:last-child{
+                    border-bottom: none;
+                }
+
+                .contact-info-content {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }    
+        }
+    }
+
+    .message-form-component .row .wpforms-container {
+        width: 95%;
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 32%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        width: 100%;
+    }
+
+    .terms-component .row {
+        h1 {
+            width: 100%;
+            font-size: 38px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .header .image-container {
+        width: 90%;
+    }
+
+    .big-hero-component {
+        .big-hero-content-container {
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                width: 95%;
+            }
+        }
+
+        .big-hero-buttons-container {
+            .btn-primary {
+                font-size: 15px;
+                padding: 10px 15px;
+            }
+
+            .btn-link {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .shop-introduction-component {
+        .shop-introduction-container {
+            width: 95%;
+        }
+    }
+
+    .testimonials-component {
+        .testimonials-container {
+
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .address-contact-component {
+        .address-contact-text-container {           
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .small-hero-component {
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+
+    .about-philosophy-component {
+        .about-philosophy-container {
+            width: 95%;
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 60px;
+
+                h3 {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 60px;
+
+                h3 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .tertiary-block-component {
+        .tertiary-block-container .tertiary-block-text-container {
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .shop-container .row {
+        padding: 0;
+
+        .shop-sidebar-container {
+            .shop-sidebar-content {
+                ul.products li.product {
+                    a {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+
+        .shop-filter-search-container .shop-search .aws-container {
+            width: 90%;
+        }
+    }
+
+    .custom-cake-form-header-component {
+        .custom-cake-form-header-text-container {
+
+            .custom-cake-form-header-text h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .custom-cake-order-form-component .row {
+        .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+            
+            .wpforms-submit-container .wpforms-submit {
+                width: 42%;
+            }
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+
+            .contact-info-header h2 {
+                font-size: 29px;
+            }
+
+            .contact-info-header h3 {
+                font-size: 25px;
+            }
+        }   
+    }
+
+    .message-form-component .row .wpforms-container {
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 40%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        .contact-map-text h3 {
+            font-size: 27px;
+        }
+    }
+
+    .terms-component .row {
+        p {
+            font-size: 16px;
+        }
+
+        ol {
+            li {
+                font-size: 16px;
+            }
+    
+            ul {
+    
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .header .image-container {
+        width: 100%;
+    }
+
+    .big-hero-component {
+        .big-hero-content-container {
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+
+        .big-hero-buttons-container {
+            .btn-primary {
+                font-size: 12px;
+                padding: 10px 5px;
+            }
+
+            .btn-link {
+                font-size: 14px;
+                padding: 6px 4px;
+            }
+        }
+    }
+
+    .shop-introduction-component {
+        .shop-introduction-container {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .promotion-banner-component {
+        h2 {
+            font-size: 30px;
+        }
+
+        .btn-primary {
+            font-size: 15px;
+        }
+    }
+
+
+    .testimonials-component {
+        .testimonials-container {
+            width: 100%;
+
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .address-contact-component {
+        .address-contact-text-container {        
+            p {
+                line-height: 30px;
+            }
+        }
+    }
+
+    .feed-component {
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .small-hero-component {
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    .secondary-block-component {
+        .row {
+            .secondary-block-title {
+                p {
+                    font-size: 34px;
+                }
+            }
+
+            .secondary-block-text-container {
+                h2 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    .about-philosophy-component {
+        .about-philosophy-container {
+            width: 100%;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .about-philosophy-component .tiles-row .card-group {
+        .tile-dark {
+            .card-body {
+                padding: 40px;
+
+                h3 {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .tile-light {
+            .card-body {
+                padding: 40px;
+
+                h3 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    .tertiary-block-component {
+        .tertiary-block-container .tertiary-block-text-container {
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .shop-container .row {
+        .shop-sidebar-container {
+            .shop-sidebar-content {
+                ul.products li.product {
+                    a {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .shop-filter-search-container .shop-search .aws-container {
+            width: 100%;
+        }
+
+        .products {
+            li.product {
+                .button {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .single-product-container h2 {
+        font-size: 28px;
+    }
+
+    .custom-cake-form-header-component {
+        margin: 0;
+
+        .custom-cake-form-header-text-container {
+            .custom-cake-form-header-text h2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .custom-cake-order-form-component .row {
+        .custom-cake-order-form-container .custom-cake-order-form-content-container .wpforms-container {
+            
+            .wpforms-submit-container .wpforms-submit {
+                width: 58%;
+            }
+        }
+    }
+
+    .contact-info-component {
+        .contact-info-header-container {
+
+            .contact-info-header h2 {
+                font-size: 22px;
+            }
+        }
+
+        .contact-info-container {
+            .contact-info-content-container {
+                .contact-info-content {
+                    p {
+                        font-size: 16px;  
+                    }
+    
+                    .contact-info-icon {
+                        height: 38px;
+                    } 
+                }
+            }
+        }
+    }
+
+    .message-form-component .row .wpforms-container {
+
+        .wpforms-submit-container .wpforms-submit {
+            width: 54%;
+        }
+    }
+
+    .contact-map-component .contact-map-text-container {
+        .contact-map-text h3 {
+            font-size: 25px;
+        }
+    }
+
+    .terms-component .row {
+        h1 {
+            font-size: 32px;
+        }
+    }
+}
