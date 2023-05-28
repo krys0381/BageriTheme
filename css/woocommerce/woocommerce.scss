@@ -631,6 +631,7 @@ p.demo_store,
 				font-weight: 700;
 				display: inline-block;
 				color: #B23A1E;
+				text-decoration: none;
 			}
 
 			.from {
@@ -1099,7 +1100,7 @@ p.demo_store,
 
 			dt,
 			.wc-item-meta-label {
-				float: left;
+				float: none;
 				clear: both;
 				margin-right: 0.25em;
 				display: inline-block;
@@ -1164,7 +1165,7 @@ p.demo_store,
 				dt,
 				dd {
 					display: inline-block;
-					float: left;
+					float: none;
 					margin-bottom: 1em;
 				}
 

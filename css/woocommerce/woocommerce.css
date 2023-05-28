@@ -715,6 +715,7 @@ p.demo_store a,
   font-weight: 700;
   display: inline-block;
   color: #B23A1E;
+  text-decoration: none;
 }
 .woocommerce ul.products li.product .price .from {
   font-size: 0.67em;
@@ -1115,7 +1116,7 @@ p.demo_store a,
 .woocommerce td.product-name dl.variation .wc-item-meta-label,
 .woocommerce td.product-name .wc-item-meta dt,
 .woocommerce td.product-name .wc-item-meta .wc-item-meta-label {
-  float: left;
+  float: none;
   clear: both;
   margin-right: 0.25em;
   display: inline-block;
@@ -1194,7 +1195,7 @@ p.demo_store a,
 .woocommerce ul.product_list_widget li dl dt,
 .woocommerce ul.product_list_widget li dl dd {
   display: inline-block;
-  float: left;
+  float: none;
   margin-bottom: 1em;
 }
 .woocommerce ul.cart_list li dl dt,
