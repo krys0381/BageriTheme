@@ -67,7 +67,6 @@ body {
     background-color: var(--bs-primary-background);
     margin: 0!important;
     padding: 0!important;
-    font-family: 'Houschka Rounded', sans-serif;
 }
 
 .pswp__caption {
@@ -1208,6 +1207,7 @@ body {
             background: var(--bs-lighter-text);
             color: #B23A1E;
             font-weight: 600;
+            text-decoration: none;
         }
 
         .components-button {
@@ -1256,6 +1256,7 @@ body {
             background: var(--bs-lighter-text);
             color: #B23A1E;
             font-weight: 600;
+            text-decoration: none;
         }
         
         .wc-block-components-checkout-return-to-cart-button {
@@ -1266,7 +1267,7 @@ body {
             width: 50%;
             padding: 10px 25px;
             border-radius: 24px;
-            border-color: var(--bs-primary-background)!important;
+            border-color: transparent;
             font-size: 18px;
             color: var(--bs-lighter-text);
             background-color: var(--bs-primary)!important;

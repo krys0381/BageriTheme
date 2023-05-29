@@ -148,6 +148,10 @@
     .contact-map-component .contact-map-text-container {
         width: 60%;
     }
+
+    .my-account-container .my-account-content-container .woocommerce-EditAccountForm button {
+        width: 50%;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -251,6 +255,8 @@
         flex-direction: column-reverse;
 
         .shop-sidebar-container {
+            margin: 25px 0;
+            
             .shop-sidebar-content {
                 ul.products li.product {
                     a {
@@ -509,6 +515,10 @@
             width: 100%;
             font-size: 38px;
         }
+    }
+
+    .my-account-container .my-account-content-container .woocommerce-EditAccountForm button {
+        width: 50%;
     }
 }
 
@@ -925,5 +935,9 @@
         h1 {
             font-size: 32px;
         }
+    }
+
+    .my-account-container .my-account-content-container .woocommerce-EditAccountForm button {
+        width: 75%;
     }
 }
